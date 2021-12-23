@@ -1,0 +1,7 @@
+<!-- <?php
+    $checkaccount= $_GET['check-account'];
+    $_SESSION['account']= $checkaccount;
+    if($_SESSION['account'] != 1){
+        header('location: account-type.php');
+    }
+?> -->
