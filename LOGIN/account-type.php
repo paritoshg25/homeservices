@@ -156,7 +156,7 @@
         <div class="logo">
             <img src="../animation/logo3.png" alt="">
         </div>
-        <h1>Choose your Account Type: Choose hello world</h1>
+        <h1>Choose your Account Type</h1>
         <div class="account-type">
             <div class="user">
                 <button class="glow-on-hover" type="button"> <a href="login-user.php">User</a> </button>
