@@ -12,7 +12,7 @@
 
         html,
         body {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/3.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif);
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -44,8 +44,9 @@
 
         .account-type {
             display: flex;
-            margin: 34px 10px;
-            padding: 20px;
+            /* margin: 34px 10px;
+            padding: 20px; */
+            justify-content: space-around;
         }
 
         .user {
@@ -57,12 +58,17 @@
             height: 50px;
             border: none;
             outline: none;
-            color: #fff;
+            /* color: #fff; */
             background: rgba(255, 255, 255, 0.8);
             cursor: pointer;
             position: relative;
             /* z-index: 0; */
             border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.7rem;
+            padding: 0px;
+            color: rebeccapurple;
         }
 
         .glow-on-hover:before {
@@ -125,8 +131,7 @@
     <style>
         .bg-img {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/3.jpg);
-            /* background: linear-gradient(-45deg, #fff, #000); */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif)
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
@@ -159,10 +164,10 @@
         <h1>Choose your Account Type</h1>
         <div class="account-type">
             <div class="user">
-                <button class="glow-on-hover" type="button"> <a href="login-user.php">User</a> </button>
+            <a href="login-user.php"><button class="glow-on-hover" type="button"> User</button></a> 
             </div>
             <div class="provider">
-                <button class="glow-on-hover" type="button" style="width: 260px;"> <a href="login-provider.php">Service Provider</a> </button>
+            <a href="login-provider.php"><button class="glow-on-hover" type="button" style="width: 260px;">Service Provider </button></a>
             </div>
         </div>
     </div>
