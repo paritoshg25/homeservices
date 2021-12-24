@@ -6,7 +6,11 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
 ?>
 <style>
     body{
-        background: linear-gradient(0deg, #306788, #182942);
+        /* background: linear-gradient(0deg, #306788, #182942); */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./animation/City_Landscape_Background.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
     }
     #find-provider {
         opacity: 10;
