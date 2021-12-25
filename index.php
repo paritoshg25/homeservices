@@ -59,10 +59,10 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod", "Godhra", "
     <div class="lottie-anime">
         <div class="center-anime">
             <!-- <lottie-player src = 'https://assets10.lottiefiles.com/packages/lf20_y3qfynfr.json' background = 'transparent'  speed = '0.5' loop  style = 'width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
-            <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player>
+           <!-- <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
         </div>
     </div>
-    <div class="container" style="margin-top:20px; margin-bottom: 60px;">
+    <div class="container" style="margin-top:215px; margin-bottom: 60px;">
 
 
         <div class="row">
