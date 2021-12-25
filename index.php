@@ -67,11 +67,6 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
             <p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
         </div>
 
-        <!-- <div class="title" style="display: grid; justify-content:center">
-        <h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
-        <p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
-        </div> -->
-
             <!-- <div class="logo"><img src="animation/logo3.png" alt=""></div> -->
 
             <!-- <hr style="margin: 10px;"> -->
