@@ -61,11 +61,41 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </style>
 <div class="main">
 
+<<<<<<< HEAD
     <section class="main-background">
         <div class="title" style="display: grid; justify-content:center">
             <h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
             <p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
         </div>
+=======
+
+    <!-- <div class="title" style="display: grid; justify-content:center">
+<h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
+<p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
+</div> -->
+    <div class="logo"><img src="animation/logo3.png" alt=""></div>
+    <hr style="margin: 10px;">
+    <div class="lottie-anime">
+        <div class="center-anime">
+            <!-- <lottie-player src = 'https://assets10.lottiefiles.com/packages/lf20_y3qfynfr.json' background = 'transparent'  speed = '0.5' loop  style = 'width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
+           <!-- <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
+        </div>
+    </div>
+    <div class="container" style="margin-top:215px; margin-bottom: 60px;">
+
+
+        <div class="row">
+            <div class="form-group col-5">
+                <label for="">City</label>
+                <select class="form-control" name="city" id="city">
+                    <option value="none">-- Select City --</option>
+                    <?php foreach ($cities as $city) : ?>
+                        <option value="<?= $city ?>"> <?= $city ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+>>>>>>> 735458354cfdc258d02301331154ff6564c4ec32
 
         <!-- <div class="logo"><img src="animation/logo3.png" alt=""></div> -->
 
