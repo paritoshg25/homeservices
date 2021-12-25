@@ -3,19 +3,31 @@
 include_once "./include/header.php";
 // $cities = ["Ahmednagar", "Akola", "Akot", "Amalner", "Ambejogai", "Amravati", "Anjangaon", "Arvi", "Aurangabad", "Bhiwandi", "Dhule", "Kalyan-Dombivali", "Ichalkaranji", "Kalyan-Dombivali", "Karjat", "Latur", "Loha", "Lonar", "Lonavla", "Mahad", "Malegaon", "Malkapur", "Mangalvedhe", "Mangrulpir", "Manjlegaon", "Manmad", "Manwath", "Mehkar", "Mhaswad", "Mira-Bhayandar", "Morshi", "Mukhed", "Mul", "Greater Mumbai*", "Murtijapur", "Nagpur", "Nanded-Waghala", "Nandgaon", "Nandura", "Nandurbar", "Narkhed", "Nashik", "Navi Mumbai", "Nawapur", "Nilanga", "Osmanabad", "Ozar", "Pachora", "Paithan", "Palghar", "Pandharkaoda", "Pandharpur", "Panvel", "Parbhani", "Parli", "Partur", "Pathardi", "Pathri", "Patur", "Pauni", "Pen", "Phaltan", "Pulgaon", "Pune", "Purna", "Pusad", "Rahuri", "Rajura", "Ramtek", "Ratnagiri", "Raver", "Risod", "Sailu", "Sangamner", "Sangli", "Sangole", "Sasvad", "Satana", "Satara", "Savner", "Sawantwadi", "Shahade", "Shegaon", "Shendurjana", "Shirdi", "Shirpur-Warwade", "Shirur", "Shrigonda", "Shrirampur", "Sillod", "Sinnar", "Solapur", "Soyagaon", "Talegaon Dabhade", "Talode", "Tasgaon", "Thane", "Tirora", "Tuljapur", "Tumsar", "Uchgaon", "Udgir", "Umarga", "Umarkhed", "Umred", "Uran", "Uran Islampur", "Vadgaon Kasba", "Vaijapur", "Vasai-Virar", "Vita", "Wadgaon Road", "Wai", "Wani", "Wardha", "Warora", "Warud", "Washim", "Yavatmal", "Yawal", "Yevla"];
 $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod", "Godhra", "Kadi", "Kalol", "Kheda", "Mandvi", "Navsari", "Rajkot", "Vadodara"];
+$services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 ?>
 <style>
     body {
-        /* background: linear-gradient(0deg, #306788, #182942); */
-        background: linear-gradient(rgba(0, 0, 0, 0.987), rgba(0, 0, 0, 0)), url(./animation/City_Landscape_Background.jpg);
+        box-sizing: border-box;
+        background: linear-gradient(0deg, #3e4239a6, #1d1717)
+        /* background: linear-gradient(rgba(0, 0, 0, 0.987), rgba(0, 0, 0, 0)), url(./animation/City_Landscape_Background.jpg);
         background-position: top;
         background-position-y: bottom;
-        height: 75vh;
+        height: 75vh; */
         /* background-attachment: fixed; */
     }
 
     .main {
-        height: 100vh;
+        /* background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.8)), url(./animation/tools-bg.jpg);
+        background-position: top;
+        background-position-y: bottom;
+        height: 75vh; */
+    }
+
+    .main-background {
+        background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.8)), url(./animation/people-renovating-house-concept.jpg);
+        background-position: 50%;
+        background-size: cover;
+        height: 504px;
     }
 
     #find-provider {
@@ -49,70 +61,77 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod", "Godhra", "
 </style>
 <div class="main">
 
-
-    <!-- <div class="title" style="display: grid; justify-content:center">
-<h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
-<p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
-</div> -->
-    <div class="logo"><img src="animation/logo3.png" alt=""></div>
-    <hr style="margin: 10px;">
-    <div class="lottie-anime">
-        <div class="center-anime">
-            <!-- <lottie-player src = 'https://assets10.lottiefiles.com/packages/lf20_y3qfynfr.json' background = 'transparent'  speed = '0.5' loop  style = 'width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
-            <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player>
-        </div>
-    </div>
-    <div class="container" style="margin-top:20px; margin-bottom: 60px;">
-
-
-        <div class="row">
-            <div class="form-group col-5">
-                <label for="">City</label>
-                <select class="form-control" name="city" id="city">
-                    <option value="none">-- Select City --</option>
-                    <?php foreach ($cities as $city) : ?>
-                        <option value="<?= $city ?>"> <?= $city ?>
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
-
-            <div class="form-group col-5">
-                <label for="">Who's Required</label>
-                <select class="form-control" name="profession" id="profession">
-                    <option value="none">Select Profession</option>
-                    <option value="electrician">Electrician</option>
-                    <option value="plumber">Plumber</option>
-                    <option value="mobile">Mobile Repairer</option>
-                </select>
-            </div>
-
-            <div class="form-group col-2">
-                <label for="">Action</label>
-                <button id="search" class="form-control btn btn-success" type="button">Search</button>
-            </div>
+    <section class="main-background">
+        <div class="title" style="display: grid; justify-content:center">
+            <h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
+            <p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
         </div>
 
-        <div class="table-responsive">
-            <table id="providers" class="table">
-                <thead>
-                    <tr>
-                        <th>Photo</th>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Profession</th>
-                        <th>Ratings</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan='5'>Select city and profession..</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- <div class="logo"><img src="animation/logo3.png" alt=""></div> -->
+
+        <!-- <hr style="margin: 10px;"> -->
+        <div class="lottie-anime">
+            <div class="center-anime">
+                <!-- <lottie-player src = 'https://assets10.lottiefiles.com/packages/lf20_y3qfynfr.json' background = 'transparent'  speed = '0.5' loop  style = 'width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
+                <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player>
+            </div>
         </div>
-    </div>
+        <div class="container" style="margin-top:20px; margin-bottom: 60px;">
+
+
+            <div class="row">
+                <div class="form-group col-5">
+                    <label for="">City</label>
+                    <select class="form-control" name="city" id="city">
+                        <option value="none">-- Select City --</option>
+                        <?php foreach ($cities as $city) : ?>
+                            <option value="<?= $city ?>"> <?= $city ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+
+                <div class="form-group col-5">
+                    <label for="">Who's Required</label>
+                    <select class="form-control" name="profession" id="profession">
+                        <option value="none">Select Profession</option>
+                        <!-- <option value="electrician">Electrician</option>
+                        <option value="plumber">Plumber</option>
+                        <option value="mobile">Mobile Repairer</option> -->
+                        <?php foreach ($services as $service) : ?>
+                            <option value="<?= $service ?>"> <?= $service ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+
+                <div class="form-group col-2">
+                    <label for="">Action</label>
+                    <button id="search" class="form-control btn btn-success" type="button">Search</button>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table id="providers" class="table">
+                    <thead>
+                        <tr>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Profession</th>
+                            <th>Ratings</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan='5'>Select city and profession..</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 </div>
 <script src="js/jquery.js"></script>
 <!-- lottie anime -->

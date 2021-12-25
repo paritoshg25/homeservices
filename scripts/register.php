@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 // require_once 'session.php';
 require_once 'DB.php';
@@ -38,7 +38,7 @@ if (isset($_POST['register'])) {
 
 
         $isProviderCreated = DB::query("INSERT INTO providers values(DEFAULT, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [
-            $name, $contact, $email, $descr, $adder1, $adder2, $city, $password, $file1, $profession
+            $name, $contact, $email, $descr, $adder1, $adder2, $city, $password, $file1, ucfirst($profession)
         ]);
 
         if ($isProviderCreated) {

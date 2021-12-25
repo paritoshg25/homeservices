@@ -3,7 +3,7 @@
 <?php
 // $cities = ["Ahmednagar", "Akola", "Akot", "Amalner", "Ambejogai", "Amravati", "Anjangaon", "Arvi", "Aurangabad", "Bhiwandi", "Dhule", "Kalyan-Dombivali", "Ichalkaranji", "Kalyan-Dombivali", "Karjat", "Latur", "Loha", "Lonar", "Lonavla", "Mahad", "Malegaon", "Malkapur", "Mangalvedhe", "Mangrulpir", "Manjlegaon", "Manmad", "Manwath", "Mehkar", "Mhaswad", "Mira-Bhayandar", "Morshi", "Mukhed", "Mul", "Greater Mumbai*", "Murtijapur", "Nagpur", "Nanded-Waghala", "Nandgaon", "Nandura", "Nandurbar", "Narkhed", "Nashik", "Navi Mumbai", "Nawapur", "Nilanga", "Osmanabad", "Ozar", "Pachora", "Paithan", "Palghar", "Pandharkaoda", "Pandharpur", "Panvel", "Parbhani", "Parli", "Partur", "Pathardi", "Pathri", "Patur", "Pauni", "Pen", "Phaltan", "Pulgaon", "Pune", "Purna", "Pusad", "Rahuri", "Rajura", "Ramtek", "Ratnagiri", "Raver", "Risod", "Sailu", "Sangamner", "Sangli", "Sangole", "Sasvad", "Satana", "Satara", "Savner", "Sawantwadi", "Shahade", "Shegaon", "Shendurjana", "Shirdi", "Shirpur-Warwade", "Shirur", "Shrigonda", "Shrirampur", "Sillod", "Sinnar", "Solapur", "Soyagaon", "Talegaon Dabhade", "Talode", "Tasgaon", "Thane", "Tirora", "Tuljapur", "Tumsar", "Uchgaon", "Udgir", "Umarga", "Umarkhed", "Umred", "Uran", "Uran Islampur", "Vadgaon Kasba", "Vaijapur", "Vasai-Virar", "Vita", "Wadgaon Road", "Wai", "Wani", "Wardha", "Warora", "Warud", "Washim", "Yavatmal", "Yawal", "Yevla"];
 $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod", "Godhra", "Kadi", "Kalol", "Kheda", "Mandvi", "Navsari", "Rajkot", "Vadodara"];
-
+$services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 ?>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/style.css">
@@ -123,9 +123,14 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod", "Godhra", "
                 <div class="form-group">
                     <label for="">Profession</label>
                     <select class="form-control" name="profession" id="profession">
-                        <option value="Electrician">Electrician</option>
+                        <!-- <option value="Electrician">Electrician</option>
                         <option value="Plumber">Plumber</option>
-                        <option value="Mobile">Mobile Repairer</option>
+                        <option value="Mobile">Mobile Repairer</option> -->
+
+                        <?php foreach ($services as $service) : ?>
+                            <option value="<?= $service ?>"> <?= $service ?>
+                            </option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
 
