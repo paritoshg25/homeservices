@@ -9,11 +9,11 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     body {
         box-sizing: border-box;
         background: linear-gradient(0deg, #3e4239a6, #1d1717)
-        /* background: linear-gradient(rgba(0, 0, 0, 0.987), rgba(0, 0, 0, 0)), url(./animation/City_Landscape_Background.jpg);
+            /* background: linear-gradient(rgba(0, 0, 0, 0.987), rgba(0, 0, 0, 0)), url(./animation/City_Landscape_Background.jpg);
         background-position: top;
         background-position-y: bottom;
         height: 75vh; */
-        /* background-attachment: fixed; */
+            /* background-attachment: fixed; */
     }
 
     .main {
@@ -61,106 +61,81 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </style>
 <div class="main">
 
-<<<<<<< HEAD
     <section class="main-background">
         <div class="title" style="display: grid; justify-content:center">
             <h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
             <p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
         </div>
-=======
 
-    <!-- <div class="title" style="display: grid; justify-content:center">
-<h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
-<p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
-</div> -->
-    <div class="logo"><img src="animation/logo3.png" alt=""></div>
-    <hr style="margin: 10px;">
-    <div class="lottie-anime">
-        <div class="center-anime">
-            <!-- <lottie-player src = 'https://assets10.lottiefiles.com/packages/lf20_y3qfynfr.json' background = 'transparent'  speed = '0.5' loop  style = 'width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
-           <!-- <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
-        </div>
-    </div>
-    <div class="container" style="margin-top:215px; margin-bottom: 60px;">
+        <!-- <div class="title" style="display: grid; justify-content:center">
+        <h2 class="text-center" style="margin-top: 20px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Servify 24x7</h2>
+        <p class="text-center" style="margin-top: 0">Best Services at Your Doorstep</p>
+        </div> -->
 
+            <!-- <div class="logo"><img src="animation/logo3.png" alt=""></div> -->
 
-        <div class="row">
-            <div class="form-group col-5">
-                <label for="">City</label>
-                <select class="form-control" name="city" id="city">
-                    <option value="none">-- Select City --</option>
-                    <?php foreach ($cities as $city) : ?>
-                        <option value="<?= $city ?>"> <?= $city ?>
-                        </option>
-                    <?php endforeach; ?>
-                </select>
-            </div>
->>>>>>> 735458354cfdc258d02301331154ff6564c4ec32
-
-        <!-- <div class="logo"><img src="animation/logo3.png" alt=""></div> -->
-
-        <!-- <hr style="margin: 10px;"> -->
-        <div class="lottie-anime">
-            <div class="center-anime">
-                <!-- <lottie-player src = 'https://assets10.lottiefiles.com/packages/lf20_y3qfynfr.json' background = 'transparent'  speed = '0.5' loop  style = 'width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
-                <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player>
-            </div>
-        </div>
-        <div class="container" style="margin-top:20px; margin-bottom: 60px;">
-
-
-            <div class="row">
-                <div class="form-group col-5">
-                    <label for="">City</label>
-                    <select class="form-control" name="city" id="city">
-                        <option value="none">-- Select City --</option>
-                        <?php foreach ($cities as $city) : ?>
-                            <option value="<?= $city ?>"> <?= $city ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
+            <!-- <hr style="margin: 10px;"> -->
+            <div class="lottie-anime">
+                <div class="center-anime">
+                    <!-- <lottie-player src = 'https://assets10.lottiefiles.com/packages/lf20_y3qfynfr.json' background = 'transparent'  speed = '0.5' loop  style = 'width: 300px; height: 300px;z-index:50;' autoplay></lottie-player> -->
+                    <lottie-player src='https://assets9.lottiefiles.com/packages/lf20_lkm4p8hp.json' background='transparent' speed='0.9' loop style='width: 300px; height: 300px;z-index:50;' autoplay></lottie-player>
                 </div>
+            </div>
+            <div class="container" style="margin-top:20px; margin-bottom: 60px;">
 
-                <div class="form-group col-5">
-                    <label for="">Who's Required</label>
-                    <select class="form-control" name="profession" id="profession">
-                        <option value="none">Select Profession</option>
-                        <!-- <option value="electrician">Electrician</option>
+
+                <div class="row">
+                    <div class="form-group col-5">
+                        <label for="">City</label>
+                        <select class="form-control" name="city" id="city">
+                            <option value="none">-- Select City --</option>
+                            <?php foreach ($cities as $city) : ?>
+                                <option value="<?= $city ?>"> <?= $city ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-5">
+                        <label for="">Who's Required</label>
+                        <select class="form-control" name="profession" id="profession">
+                            <option value="none">Select Profession</option>
+                            <!-- <option value="electrician">Electrician</option>
                         <option value="plumber">Plumber</option>
                         <option value="mobile">Mobile Repairer</option> -->
-                        <?php foreach ($services as $service) : ?>
-                            <option value="<?= $service ?>"> <?= $service ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
+                            <?php foreach ($services as $service) : ?>
+                                <option value="<?= $service ?>"> <?= $service ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-2">
+                        <label for="">Action</label>
+                        <button id="search" class="form-control btn btn-success" type="button">Search</button>
+                    </div>
                 </div>
 
-                <div class="form-group col-2">
-                    <label for="">Action</label>
-                    <button id="search" class="form-control btn btn-success" type="button">Search</button>
+                <div class="table-responsive">
+                    <table id="providers" class="table">
+                        <thead>
+                            <tr>
+                                <th>Photo</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Profession</th>
+                                <th>Ratings</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan='5'>Select city and profession..</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-
-            <div class="table-responsive">
-                <table id="providers" class="table">
-                    <thead>
-                        <tr>
-                            <th>Photo</th>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th>Profession</th>
-                            <th>Ratings</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan='5'>Select city and profession..</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </section>
 </div>
 <script src="js/jquery.js"></script>
