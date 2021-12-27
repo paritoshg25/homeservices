@@ -21,9 +21,9 @@
             opacity: 100;
         }
 
-        body {
+        /* body {
             background: linear-gradient(0deg, #306788, #182942);
-        }
+        } */
 
         a.my-bookings {
             color: white;
