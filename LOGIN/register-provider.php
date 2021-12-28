@@ -39,6 +39,17 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 
     .card {
         width: 800px;
+        background: linear-gradient(0deg, #a9968ae0, #5782c1);
+    }
+
+    #register:hover{
+        background: #485f85;
+        border-color: #485f85;
+    }
+
+    .btn-primary{
+        background-color: #6983ad;
+        border-color: #6983ad;
     }
 </style>
 

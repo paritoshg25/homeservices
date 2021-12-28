@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>User Login Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 
     <style>
         .bg-img {
@@ -19,6 +19,10 @@
             background-repeat: no-repeat;
             filter: blur(3px);
         }
+
+        #login:hover{
+            background: #485f85;
+            border-color: #485f85;
     </style>
 </head>
 <script src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
@@ -27,6 +31,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 form login-form">
+            <!-- style="background: linear-gradient(0deg, #a9968ae0, #5782c1;) -->
                 <form action="login-user.php" method="POST" autocomplete="">
                     <h2 class="text-center">Login Form</h2>
                     <p class="text-center">Login with your email and password.</p>
@@ -51,7 +56,7 @@
                     </div>
                     <div class="link forget-pass text-left"><a href="forgot-password.php">Forgot password?</a></div>
                     <div class="form-group">
-                        <input class="form-control button" type="submit" name="login" value="Login">
+                        <input class="form-control button" id="login" type="submit" name="login" value="Login">
                     </div>
                     <div class="link login-link text-center">Not yet a member? <a href="signup-user.php">Signup now</a></div>
                     <div class="link login-link text-center"><a href="login-provider.php">Login as Service Provider?</a></div>

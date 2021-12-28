@@ -31,7 +31,6 @@ html, body{
 }
 .container .form{
     /* background: #fff; */
-    /*background: linear-gradient(0deg, #eab783, #686bcfcc);*/
     background: linear-gradient(0deg, #a9968ae0, #5782c1);
     padding: 30px 35px;
     border-radius: 5px;
@@ -50,6 +49,7 @@ html, body{
 .container .form form .button{
     /*background: #6665ee;*/
     background: #4e74ab;
+    border-color: #4e74ab;
     color: #fff;
     font-size: 17px;
     font-weight: 500;

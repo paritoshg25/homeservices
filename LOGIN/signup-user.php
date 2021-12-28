@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Signup Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 
     <style>
         .bg-img {
@@ -17,6 +17,11 @@
             background-position: center;
             background-repeat: no-repeat;
             filter: blur(3px);
+        }
+
+        #signup:hover{
+            background: #485f85;
+            border-color: #485f85;
         }
     </style>
 
@@ -69,7 +74,7 @@
                         <input class="form-control" type="password" name="cpassword" placeholder="Confirm password" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control button" type="submit" name="signup" value="Signup">
+                        <input class="form-control button" id="signup" type="submit" name="signup" value="Signup">
                     </div>
                     <div class="link login-link text-center">Already a member? <a href="login-user.php">Login here</a></div>
                 </form>
