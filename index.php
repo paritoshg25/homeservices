@@ -61,7 +61,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     }
 
     .logo img {
-        height: 5rem;
+        height: 60rem;
     }
 
     hr {
@@ -78,7 +78,8 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
             <!-- <h2 class="" style="margin-top: 20px;">Servify 24x7</h2>
             <label class="" style="font-size: 1.97rem;">Best Services at Your Doorstep</label> -->
             <!-- <div class="logo"><img src="animation/logo2.png" alt=""></div> -->
-            <div class="logo"><img src="./animation/Servify 24x7-logo/profile.png" alt=""></div>
+            <!-- <div class="logo"><img src="./animation/Servify 24x7-logo/profile.png" alt=""></div> -->
+            <div class="logo"><img src="./animation/Servify 24x7-logo/logo3.png" alt=""></div>
         </div>
 
         <!-- <div class="logo"><img src="animation/logo3.png" alt=""></div> -->

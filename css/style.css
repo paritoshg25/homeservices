@@ -5,7 +5,7 @@
             font-family: 'Poppins', sans-serif;
         }
         .navbar{
-          background: linear-gradient(0deg, #eab783, #686bcfcc) !important;
+            background: linear-gradient(0deg, #a9968ae0, #5782c1) !important;
         }
         nav a.nav-link {
             color: #fff !important;
