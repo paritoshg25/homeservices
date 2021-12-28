@@ -12,7 +12,7 @@ if ($email == false) {
     <meta charset="UTF-8">
     <title>Code Verification</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 
     <style>
         .bg-img {
@@ -23,6 +23,11 @@ if ($email == false) {
             background-position: center;
             background-repeat: no-repeat;
             filter: blur(3px);
+        }
+
+        #submit:hover{
+            background: #485f85;
+            border-color: #485f85;
         }
     </style>
 
@@ -62,7 +67,7 @@ if ($email == false) {
                         <input class="form-control" type="number" name="otp" placeholder="Enter code" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control button" type="submit" name="check-reset-otp" value="Submit">
+                        <input class="form-control button" id="submit" type="submit" name="check-reset-otp" value="Submit">
                     </div>
                 </form>
             </div>

@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>Login Form</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 
     <style>
         .bg-img {
@@ -18,6 +18,11 @@
             background-position: center;
             background-repeat: no-repeat;
             filter: blur(3px);
+        }
+
+        #login:hover{
+            background: #485f85;
+            border-color: #485f85;
         }
     </style>
 
@@ -67,7 +72,7 @@
                     </div>
                     <div class="link forget-pass text-left"><a href="forgot-password.php">Forgot password?</a></div>
                     <div class="form-group">
-                        <input class="form-control button" type="submit" name="login" value="Login">
+                        <input class="form-control button" id="login" type="submit" name="login" value="Login">
                     </div>
                     <div class="link login-link text-center">Register for Service Provider? <a href="register-provider.php">Register now</a></div>
                     <div class="link login-link text-center">Login as member? <a href="login-user.php">Login Here</a></div>

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <title>Forgot Password</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 
     <style>
         .bg-img {
@@ -17,6 +17,11 @@
             background-position: center;
             background-repeat: no-repeat;
             filter: blur(3px);
+        }
+
+        #continue:hover{
+            background: #485f85;
+            border-color: #485f85;
         }
     </style>
 
@@ -47,7 +52,7 @@
                         <input class="form-control" type="email" name="email" placeholder="Enter email address" required value="<?php echo $email ?>">
                     </div>
                     <div class="form-group">
-                        <input class="form-control button" type="submit" name="check-email" value="Continue">
+                        <input class="form-control button" id="continue" type="submit" name="check-email" value="Continue">
                     </div>
                 </form>
             </div>

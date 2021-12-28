@@ -38,9 +38,9 @@
                     <strong class="card-title">Project Members</strong>
                     <ul>
                         <li>Paritosh Gupta</li>
-                        <li>Suraj Mehta</li>
-                        <li>Tirth</li>
-                        <li>Utkarsh</li>
+                        <li>Nandita Patel</li>
+                        <li>Shweta Panchal</li>
+                        <li>Hani Kachoriya</li>
                     </ul>
                 </div>
 
