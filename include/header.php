@@ -16,7 +16,9 @@
 
     <style>
         .navbar {
-            background: linear-gradient(0deg, #6481d2, #8e91fd);
+            /* background: linear-gradient(0deg, #6481d2, #8e91fd); */
+            /* background: linear-gradient(0deg, #a9968ae0, #5782c1); */
+            background: linear-gradient(0deg, #a9968ae0, #5782c1) !important;
             box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
             opacity: 100;
         }
