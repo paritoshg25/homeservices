@@ -1,50 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-        html,
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        .navbar{
-          background: linear-gradient(0deg, #eab783, #686bcfcc) !important;
-        }
-        nav a.nav-link {
-            color: #fff !important;
-            margin-right: 7px;
-            font-size: 17px;
-            border-radius: 7px;
-        }
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
-        .profile {
-            display: flex;
-            justify-content: right;
-            margin-left: auto;
-            align-items: center;
-        }
+.navbar {
+    /* background: linear-gradient(0deg, #eab783, #686bcfcc); */
+    /* background: linear-gradient(0deg, #aaabad, #5d76f5) !important; */
+}
 
-        .nav-item:hover {
-            opacity: 10;
-            background-color: white;
-            color: black !important;
-            border-radius: 7px;
-        }
+nav a.nav-link {
+    color: #fff !important;
+    margin-right: 7px;
+    font-size: 17px;
+    border-radius: 7px;
+}
 
-        p,
-        .nav-item,
-        .nav-list {
-            margin: 0px;
-            display: flex;
-            align-items: center;
-        }
+.profile {
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+    align-items: center;
+}
 
-        a {
-            font-size: 18px;
-            transition: all 0.3s ease;
-            border-radius: 7px;
-        }
+.nav-item:hover {
+    opacity: 10;
+    background-color: white;
+    color: black !important;
+    border-radius: 7px;
+}
 
-        .admin-nav {
-            list-style: none;
-            display: flex;
-        }
-        
-        
+p,
+.nav-item,
+.nav-list {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+}
+
+.admin-nav {
+    list-style: none;
+    display: flex;
+}
