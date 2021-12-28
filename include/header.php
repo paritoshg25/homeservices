@@ -15,6 +15,7 @@
     <title>Home Services</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
         .navbar {
             /* background: linear-gradient(0deg, #6481d2, #8e91fd); */
             background: linear-gradient(0deg, #aaabad, #5d76f5) !important;
@@ -42,6 +43,7 @@
             letter-spacing: 1px;
             color: #b5d6ff;
             margin-right: 20px;
+            font-family: 'Kalam', cursive;
         }
 
         body {
