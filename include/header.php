@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <title>Home Services</title>
@@ -26,13 +26,22 @@
             display: flex;
         }
 
+        .navbar-brand{
+            display: flex;
+            align-items: center;
+            border-right: 2px solid white;
+        }
+        .navbar-brand label{
+            margin-left: 10px;
+        }
+
         .brand-name {
             font-size: 1.8rem;
             margin-bottom: 0px;
             font-family: 'Poppins';
             letter-spacing: 1px;
-            color: #073c6c;
-            margin-right: 28px;
+            color: #b5d6ff;
+            margin-right: 20px;
         }
 
         body {
@@ -41,7 +50,7 @@
 
         a.my-bookings {
             color: white;
-            text-decoration: underline;
+            text-decoration: none;
             margin-right: 29px;
             font-size: 20px;
             padding: 5px;
@@ -54,7 +63,7 @@
         <?php if (!isset($_SESSION['user'])) : ?>
             <div class="left-nav">
                 <a class="navbar-brand" href="./index.php">
-                    <img src="./animation/Servify 24x7-logo/customer-support.png" alt="" width="42" height="32" class="d-inline-block align-text-top"> <label for="" class="brand-name">Servify.24x7</label>
+                    <img src="./animation/Servify 24x7-logo/customer-support2.png" alt="" width="42" height="32" class="d-inline-block align-text-top"> <label for="" class="brand-name">Servify.24x7</label>
                 </a>
                 <a class="nav-item nav-link active" id="find-provider" href="index.php">Home</a>
                 <!-- <a class="nav-item nav-link" href="login.php">Login Service Provider</a> -->

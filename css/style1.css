@@ -8,7 +8,7 @@ body {
 nav a.nav-link {
     color: #fff !important;
     margin-right: 7px;
-    font-size: 17px;
+    font-size: 1.2rem;
     /* border-radius: 7px; */
 }
 
@@ -16,7 +16,7 @@ nav a.nav-link {
 #find-provider {
     opacity: 10;
     /* background-color: white; */
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
     /* border-radius: 7px; */
     border-bottom: 4px solid #ffffff;
 }
@@ -28,11 +28,13 @@ nav a.nav-link {
     align-items: center;
 }
 
+
 .nav-item:hover {
     opacity: 10;
     /* background-color: white; */
-    color: black !important;
+    color: #a0e9ff !important;
     /* border-radius: 7px; */
+    border-bottom: 4px solid #ffffff;
 }
 
 p,
