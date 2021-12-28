@@ -16,9 +16,23 @@
 
     <style>
         .navbar {
-            background: linear-gradient(0deg, #6481d2, #8e91fd);
+            /* background: linear-gradient(0deg, #6481d2, #8e91fd); */
+            background: linear-gradient(0deg, #aaabad, #5d76f5) !important;
             box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
             opacity: 100;
+        }
+
+        .left-nav {
+            display: flex;
+        }
+
+        .brand-name {
+            font-size: 1.8rem;
+            margin-bottom: 0px;
+            font-family: 'Poppins';
+            letter-spacing: 1px;
+            color: #073c6c;
+            margin-right: 28px;
         }
 
         body {
@@ -38,11 +52,16 @@
 <body>
     <nav class="navbar sticky-top">
         <?php if (!isset($_SESSION['user'])) : ?>
-            <a class="nav-item nav-link active" id="find-provider" href="index.php">Find Service Provider</a>
-            <!-- <a class="nav-item nav-link" href="login.php">Login Service Provider</a> -->
-            <!-- <a class="nav-item nav-link" id="register-provider" href="register.php">Register Service Provider</a> -->
-            <a class="nav-item nav-link" id="about" href="about.php">About</a>
-            <a class="nav-item nav-link" id="contact-us" href="contact-us.php">Contact Us</a>
+            <div class="left-nav">
+                <a class="navbar-brand" href="./index.php">
+                    <img src="./animation/Servify 24x7-logo/customer-support.png" alt="" width="42" height="32" class="d-inline-block align-text-top"> <label for="" class="brand-name">Servify.24x7</label>
+                </a>
+                <a class="nav-item nav-link active" id="find-provider" href="index.php">Home</a>
+                <!-- <a class="nav-item nav-link" href="login.php">Login Service Provider</a> -->
+                <!-- <a class="nav-item nav-link" id="register-provider" href="register.php">Register Service Provider</a> -->
+                <a class="nav-item nav-link" id="about" href="about.php">About</a>
+                <a class="nav-item nav-link" id="contact-us" href="contact-us.php">Contact Us</a>
+            </div>
             <div class="profile">
                 <?php if (isset($_SESSION['username'])) : ?>
                     <p><a class="my-bookings nav-item" id="my-bookings" href="mybookings.php">My Bookings</a></p>
