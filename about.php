@@ -7,12 +7,22 @@
 
     #about {
         opacity: 10;
-        background-color: white;
+        /* background-color: white; */
         color: black !important;
-        border-radius: 7px;
+        /* border-radius: 7px; */
+        /* border-bottom: 4px solid #ffffff; */
+        /* color: rgb(255, 255, 255) !important; */
+        border-bottom: 4px solid #ffffff;
+        color: rgb(255, 255, 255) !important;
     }
 
-    .card{
+    #about:active {
+
+        border-bottom: 4px solid #ffffff;
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .card {
         background: linear-gradient(322deg, #82afbd, #20395f);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
