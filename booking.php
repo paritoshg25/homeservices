@@ -114,6 +114,11 @@ include_once "msg/booking.php";
                 </div>
 
                 <div class="form-group">
+                    <label for="">Time</label>
+                    <input class="form-control" type="time" name="time" id="time" required>
+                </div>
+
+                <div class="form-group">
                     <label for="">Payment Mode</label>
                     <select class="form-control" name="payment" id="payment" required>
                         <option value="cash">Cash</option>
