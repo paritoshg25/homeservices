@@ -69,6 +69,20 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         margin-top: 10px;
         margin-bottom: 0;
     }
+
+    #search:hover{
+        background: #485f85;
+        border-color: #485f85;
+    }
+
+    /* #search:before{
+        background-color: #4e74ab;
+    } */
+
+    .btn-success {
+    background-color: #4e74ab;
+    border-color: #4e74ab;
+}
 </style>
 <div class="main">
 
