@@ -58,6 +58,16 @@
         border-width: 1px;
         width: 13rem;
     }
+
+    .btn-primary {
+        background-color: #4c739b;
+        border-color: #4c739b;
+    }
+
+    #send:hover{
+        background: #485f85;
+        border-color: #485f85;
+    }
 </style>
 <?php include_once "msg/message.php"; ?>
 <div class="container d-flex" style="margin-top: 30px;margin-bottom: 60px;">
