@@ -50,6 +50,7 @@
         transform: scale(1.2);
         transition: all 0.3s ease;
         background: #ffffffbd;
+        /* background: #df691a; */
     }
 
     .text h3 {
