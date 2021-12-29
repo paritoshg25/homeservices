@@ -21,9 +21,11 @@ $bookings = DB::query($sql)->fetchAll(PDO::FETCH_OBJ);
 
     #my-bookings {
         opacity: 10;
-        background-color: white;
+        /* background-color: white; */
         color: black !important;
-        border-radius: 7px;
+        /* border-radius: 7px; */
+        border-bottom: 4px solid #ffffff;
+        color: rgb(255, 255, 255) !important;
     }
 
     body {

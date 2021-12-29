@@ -5,9 +5,11 @@
     }
     #contact-us {
         opacity: 10;
-        background-color: white;
+        /* background-color: white; */
         color: black !important;
-        border-radius: 7px;
+        /* border-radius: 7px; */
+        border-bottom: 4px solid #ffffff;
+        color: rgb(255, 255, 255) !important;
     }
 
     .container {
@@ -43,6 +45,11 @@
         border-radius: 50%;
         margin-right: 30px;
         font-size: 27px;
+    }
+    .icon:hover{
+        transform: scale(1.2);
+        transition: all 0.3s ease;
+        background: #ffffffbd;
     }
 
     .text h3 {

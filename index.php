@@ -44,7 +44,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     #find-provider {
         opacity: 10;
         /* background-color: white; */
-        color: rgb(255, 255, 255) !important;
+        color: rgb(255, 255, 255);
         /* border-radius: 7px; */
         border-bottom: 4px solid #ffffff;
     }

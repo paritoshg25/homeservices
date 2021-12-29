@@ -16,11 +16,11 @@
         color: rgb(255, 255, 255) !important;
     }
 
-    #about:active {
+    /* #about:active {
 
         border-bottom: 4px solid #ffffff;
         color: rgb(255, 255, 255) !important;
-    }
+    } */
 
     .card {
         background: linear-gradient(322deg, #82afbd, #20395f);
@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="card-footer text-center">
-                    Project-Guide: Prof. Kaushal Jani
+                    Project-Guide: 
                 </div>
             </div>
         </div>
