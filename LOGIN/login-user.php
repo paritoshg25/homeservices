@@ -23,6 +23,7 @@
         #login:hover{
             background: #485f85;
             border-color: #485f85;
+        }
     </style>
 </head>
 <script src = 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
