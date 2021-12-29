@@ -113,10 +113,10 @@ include_once "msg/booking.php";
                     <input class="form-control" type="date" name="date" id="date" required>
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="">Time</label>
                     <input class="form-control" type="time" name="time" id="time" required>
-                </div>
+                </div> -->
 
                 <div class="form-group">
                     <label for="">Payment Mode</label>
