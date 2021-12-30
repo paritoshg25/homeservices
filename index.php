@@ -93,7 +93,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
             <label class="" style="font-size: 1.97rem;">Best Services at Your Doorstep</label> -->
             <!-- <div class="logo"><img src="animation/logo2.png" alt=""></div> -->
             <!-- <div class="logo"><img src="./animation/Servify 24x7-logo/profile.png" alt=""></div> -->
-            <div class="logo"><img src="./animation/Servify 24x7-logo/logo3.png" alt=""></div>
+            <!-- <div class="logo"><img src="./animation/Servify 24x7-logo/logo3.png" alt=""></div> -->
         </div>
 
         <!-- <div class="logo"><img src="animation/logo3.png" alt=""></div> -->
