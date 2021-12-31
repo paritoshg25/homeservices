@@ -8,6 +8,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 <style>
     body {
         box-sizing: border-box;
+        overflow-x: hidden;
         /* background: linear-gradient(0deg, #3e4239a6, #1d1717); */
 
         /* background: linear-gradient(rgba(0, 0, 0, 0.987), rgba(0, 0, 0, 0)), url(./animation/City_Landscape_Background.jpg);
