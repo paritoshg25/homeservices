@@ -131,7 +131,7 @@
     <style>
         .bg-img {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif)
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif);
             background-attachment: fixed;
             background-size: cover;
             background-position: center;

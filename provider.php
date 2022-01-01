@@ -16,9 +16,11 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
 <style>
     #provider-update-profile {
         opacity: 10;
-        background-color: white !important;
+        /* background-color: white !important; */
         color: black !important;
-        border-radius: 7px;
+        /* border-radius: 7px; */
+        border-bottom: 3px solid #ffffff;
+        color: rgb(255, 255, 255) !important;
     }
     .card{
         background: linear-gradient(322deg, #82afbd, #20395f);
