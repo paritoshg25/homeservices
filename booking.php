@@ -110,7 +110,7 @@ include_once "msg/booking.php";
 
                 <div class="form-group">
                     <label for="">Time</label>
-                    <input class="form-control" type="time" name="time" id="time" placeholder="Enter time" step="5" min="9:00am" max="9:00pm" required>
+                    <input class="form-control" type="time" name="time" id="time" max="20:00" required>
                 </div>
 
                 <div class="form-group">
