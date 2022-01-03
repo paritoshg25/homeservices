@@ -19,7 +19,7 @@ include_once "msg/booking.php";
 
 ?>
 <style>
-     .card {
+    .card {
         background: linear-gradient(322deg, #82afbd, #20395f);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
@@ -32,8 +32,7 @@ include_once "msg/booking.php";
         <div class="container" style="margin-top: 30px;">
             <div class="row">
                 <div class="col">
-                    <img style="height: 250px; border-radius:0%;"
-                        src="images/<?= $provider->photo; ?>">
+                    <img style="height: 250px; border-radius:0%;" src="images/<?= $provider->photo; ?>">
                 </div>
             </div>
         </div>
@@ -47,7 +46,7 @@ include_once "msg/booking.php";
                     </td>
                     <th>Profession</th>
                     <td>
-                        <?= $provider->profession;?>
+                        <?= $provider->profession; ?>
                     </td>
                 </tr>
                 <tr>
@@ -78,8 +77,7 @@ include_once "msg/booking.php";
             <hr>
 
             <form action="scripts/bookhall.php" method="post">
-                <input type="hidden" name="provider"
-                    value="<?= $provider->id; ?>">
+                <input type="hidden" name="provider" value="<?= $provider->id; ?>">
                 <div class="form-group">
                     <label for="">First Name</label>
                     <input id="fname" name="fname" type="text" class="form-control" placeholder="First Name" required>
@@ -97,26 +95,23 @@ include_once "msg/booking.php";
 
                 <div class="form-group">
                     <label for="">Contact No.</label>
-                    <input id="contact" name="contact" type="text" class="form-control" placeholder="Contact No."
-                        minlength="10" maxlength="10"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
+                    <input id="contact" name="contact" type="text" class="form-control" placeholder="Contact No." minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required>
                 </div>
 
                 <div class="form-group">
                     <label for="">Address</label>
-                    <input id="adder" name="adder" type="text" class="form-control" placeholder="Address"
-                        maxlength="255" required>
+                    <input id="adder" name="adder" type="text" class="form-control" placeholder="Address" maxlength="255" required>
                 </div>
 
                 <div class="form-group">
                     <label for="">Date</label>
-                    <input class="form-control" type="date" name="date" id="date" required>
+                    <input class="form-control" type="date" min=<?= date("Y-m-d") ?> name="date" id="date" required>
                 </div>
 
-                <!-- <div class="form-group">
+                <div class="form-group">
                     <label for="">Time</label>
-                    <input class="form-control" type="time" name="time" id="time" required>
-                </div> -->
+                    <input class="form-control" type="time" name="time" id="time" placeholder="Enter time" step="5" min="9:00am" max="9:00pm" required>
+                </div>
 
                 <div class="form-group">
                     <label for="">Payment Mode</label>
@@ -128,12 +123,10 @@ include_once "msg/booking.php";
 
                 <div class="form-group">
                     <label for="">Problem</label>
-                    <textarea id="queries" name="queries" class="form-control" maxlength="255"
-                        placeholder="What is the Problem..?"></textarea>
+                    <textarea id="queries" name="queries" class="form-control" maxlength="255" placeholder="What is the Problem..?"></textarea>
                 </div>
 
-                <button style="margin-top: 30px" class="btn btn-block btn-primary" type="submit" name="book"
-                    id="book">Book
+                <button style="margin-top: 30px" class="btn btn-block btn-primary" type="submit" name="book" id="book">Book
                     Hall</button>
             </form>
 

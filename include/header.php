@@ -148,14 +148,6 @@
 
 
 
-                    
-
-
-
-
-
-
-
                 <?php endif; ?>
             </div>
 
@@ -200,7 +192,7 @@
             element.classList.toggle("show");
         }
 
-        document.querySelectorAll('dropdown-menu').forEach(item => {
+        document.querySelectorAll('.dropdown-menu').forEach(item => {
             item.addEventListener('click', event => {
                 if (event.target.classList.contains('dropdown-menu')) {
                     event.target.classList.toggle('show');
