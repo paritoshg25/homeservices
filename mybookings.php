@@ -53,7 +53,7 @@ $bookings = DB::query($sql)->fetchAll(PDO::FETCH_OBJ);
     <div class="table-responsive">
         <table class="table">
             <tr>
-                <th>Sr. No.</th>
+                <th>Booking ID</th>
                 <th>Provider Name</th>
                 <th>Your Address</th>
                 <th>Date of Appointment</th>
@@ -90,11 +90,11 @@ $bookings = DB::query($sql)->fetchAll(PDO::FETCH_OBJ);
                         <?= $booking->queries; ?>
                     </td>
                     <td>
-                        <?php if ($booking->status == 'done') : ?>
+                        <?php if ($booking->status == 'DONE') : ?>
                             <p class="status green"> Done </p>
                         <?php endif; ?>
 
-                        <?php if ($booking->status == 'pending' || $booking->status == null) : ?>
+                        <?php if ($booking->status == 'PENDING' || $booking->status == null) : ?>
                             <p class="status red"> Pending </p>
                         <?php endif; ?>
                     </td>

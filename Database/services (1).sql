@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 28, 2021 at 07:19 AM
+-- Generation Time: Jan 04, 2022 at 09:07 AM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.8
 
@@ -36,6 +36,7 @@ CREATE TABLE `bookings` (
   `contact` varchar(20) NOT NULL,
   `adder` varchar(255) NOT NULL,
   `date` date NOT NULL,
+  `time` time(6) NOT NULL,
   `payment` varchar(30) NOT NULL,
   `queries` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL
@@ -45,13 +46,13 @@ CREATE TABLE `bookings` (
 -- Dumping data for table `bookings`
 --
 
-INSERT INTO `bookings` (`id`, `provider_id`, `fname`, `lname`, `email`, `contact`, `adder`, `date`, `payment`, `queries`, `status`) VALUES
-(10, 1, 'PAritosh', 'Gupta', 'paritoshg84@gmail.com', '7600926273', 'kadi', '0000-00-00', 'dcc ', 'd dc', 'done'),
-(16, 21, 'Nandita', 'Patel', 'dhyanand1132@gmail.com', '1322342342', 'ahmed', '2021-12-17', 'card', 'bijli', 'PENDING'),
-(21, 6, 'shweta', 'panchal', 'panchalshweta312@gmail.com', '232334343', '3543434', '0000-00-00', 'cash', '353454', 'PENDING'),
-(23, 5, 'nandita', 'patel', 'dhyanand1132@gmail.com', '7600926273', 'kadi', '2021-12-15', 'cash', 'light', 'PENDING'),
-(24, 21, 'nandita', 'patel', 'dhyanand1132@gmail.com', '7600926273', 'kadi', '2021-12-23', 'card', 'efredf', 'PENDING'),
-(25, 5, 'nandita', 'patel', 'dhyanand1132@gmail.com', '7600926273', 'kadi', '2021-12-22', 'cash', 'wdeswd', 'PENDING');
+INSERT INTO `bookings` (`id`, `provider_id`, `fname`, `lname`, `email`, `contact`, `adder`, `date`, `time`, `payment`, `queries`, `status`) VALUES
+(10, 1, 'PAritosh', 'Gupta', 'paritoshg84@gmail.com', '7600926273', 'kadi', '0000-00-00', '00:00:00.000000', 'dcc ', 'd dc', 'done'),
+(16, 21, 'Nandita', 'Patel', 'dhyanand1132@gmail.com', '1322342342', 'ahmed', '2021-12-17', '00:00:00.000000', 'card', 'bijli', 'DONE'),
+(21, 6, 'shweta', 'panchal', 'panchalshweta312@gmail.com', '232334343', '3543434', '0000-00-00', '00:00:00.000000', 'cash', '353454', 'PENDING'),
+(24, 21, 'nandita', 'patel', 'dhyanand1132@gmail.com', '7600926273', 'kadi', '2021-12-23', '00:00:00.000000', 'card', 'efredf', 'PENDING'),
+(25, 5, 'nandita', 'patel', 'dhyanand1132@gmail.com', '7600926273', 'kadi', '2021-12-22', '00:00:00.000000', 'cash', 'wdeswd', 'PENDING'),
+(26, 5, 'Shweta', 'Panchal', 'dhyanand1132@gmail.com', '9089898989', 'Kadi', '2022-01-04', '14:58:00.000000', 'card', 'asasa', 'PENDING');
 
 -- --------------------------------------------------------
 
@@ -108,7 +109,7 @@ ALTER TABLE `providers`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `providers`

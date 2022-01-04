@@ -13,12 +13,13 @@ if (isset($_POST['book'])) {
     $contact = $_POST['contact'];
     $adder = $_POST['adder'];
     $date = $_POST['date'];
+    $time = $_POST['time'];
     $queries = $_POST['queries'];
     $payment = $_POST['payment'];
     $status= 'PENDING';
-    $sql = "INSERT INTO bookings values(DEFAULT, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)";
+    $sql = "INSERT INTO bookings values(DEFAULT, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)";
     $isBooked = DB::query( $sql, [
-        $provider, $fname, $lname,$email, $contact, $adder, $date, $payment, $queries, $status
+        $provider, $fname, $lname,$email, $contact, $adder, $date, $time, $payment, $queries, $status
     ]);
 
 

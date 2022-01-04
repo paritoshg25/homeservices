@@ -117,7 +117,7 @@
                                     <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -74px;">
                                         <a class="dropdown-item" href="#"> <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p></a>
                                         <a class="dropdown-item" href="#">Edit Profile</a>
-                                        <a class="dropdown-item" href="#">Log Out</a>
+                                        <a class="dropdown-item" href="./LOGIN/logout-user.php">Log Out</a>
                                     </div>
                                 </li>
                             </ul>
@@ -145,14 +145,6 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div> -->
-
-
-
-                    
-
-
-
-
 
 
 
@@ -200,7 +192,7 @@
             element.classList.toggle("show");
         }
 
-        document.querySelectorAll('dropdown-menu').forEach(item => {
+        document.querySelectorAll('.dropdown-menu').forEach(item => {
             item.addEventListener('click', event => {
                 if (event.target.classList.contains('dropdown-menu')) {
                     event.target.classList.toggle('show');
