@@ -126,6 +126,10 @@ include_once "msg/booking.php";
                     <textarea id="queries" name="queries" class="form-control" maxlength="255" placeholder="What is the Problem..?"></textarea>
                 </div>
 
+                <!-- loading logic -->
+                <!-- <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> -->
+                <!-- loading logic -->
+
                 <button style="margin-top: 30px" class="btn btn-block btn-primary" type="submit" name="book" id="book">Book
                     Hall</button>
             </form>
