@@ -90,11 +90,11 @@ $bookings = DB::query($sql)->fetchAll(PDO::FETCH_OBJ);
                         <?= $booking->queries; ?>
                     </td>
                     <td>
-                        <?php if ($booking->status == 'DONE') : ?>
+                        <?php if ($booking->status == 'DONE' || $booking->status == 'done') : ?>
                             <p class="status green"> Done </p>
                         <?php endif; ?>
 
-                        <?php if ($booking->status == 'PENDING' || $booking->status == null) : ?>
+                        <?php if ($booking->status == 'PENDING' || $booking->status == 'pending' || $booking->status == null) : ?>
                             <p class="status red"> Pending </p>
                         <?php endif; ?>
                     </td>
