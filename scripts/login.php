@@ -11,7 +11,7 @@ if (isset($_POST['login'])) {
     $email = $input['email'];
     $password = $input['password'];
 
-    if ($email ==  "admin.homeservice@gmail.com" && $password == "admin123") {
+    if ($email ==  "admin.servify.24x7@gmail.com" && $password == "admin123") {
         $s = new stdClass();
         $s->name = "admin";
         $_SESSION['user'] = $s;
