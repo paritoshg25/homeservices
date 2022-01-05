@@ -5,6 +5,10 @@ include_once "./include/header.php";
 $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod", "Godhra", "Kadi", "Kalol", "Kheda", "Mandvi", "Navsari", "Rajkot", "Vadodara"];
 $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 ?>
+
+<head>
+    <link rel="stylesheet" href="./css/loader.css">
+</head>
 <style>
     body {
         box-sizing: border-box;
@@ -71,7 +75,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         margin-bottom: 0;
     }
 
-    #search:hover{
+    #search:hover {
         background: #485f85;
         border-color: #485f85;
     }
@@ -81,11 +85,19 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     } */
 
     .btn-success {
-    background-color: #4e74ab;
-    border-color: #4e74ab;
-}
+        background-color: #4e74ab;
+        border-color: #4e74ab;
+    }
 </style>
+
+
+<!-- <div id="loading-wrapper">
+    <div id="loading-text">LOADING</div>
+    <div id="loading-content"></div>
+</div> -->
+
 <div class="main">
+
 
     <section class="main-background">
 
