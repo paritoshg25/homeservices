@@ -225,10 +225,14 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </script>
 
 <script type="text/javascript">
-    window.addEventListener("load", function(){
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
+    // window.addEventListener("load", function(){
+    //     const loader = document.querySelector(".loader");
+    //     loader.className += " hidden";
+    // });
+
+    $(window).on("load",function(){
+     $(".loader").fadeOut("slow");
+});
 </script>
 
 <?php include_once "./include/footer.php";
