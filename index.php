@@ -96,6 +96,10 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     <div id="loading-content"></div>
 </div> -->
 
+<div class="loader">
+    <img src="images/loading.gif" alt="loading..."/>
+</div>
+
 <div class="main">
 
 
@@ -217,6 +221,13 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
                 });
             }
         });
+    });
+</script>
+
+<script type="text/javascript">
+    window.addEventListener("load", function(){
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
     });
 </script>
 
