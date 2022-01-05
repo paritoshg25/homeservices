@@ -23,6 +23,15 @@ include_once "msg/booking.php";
         background: linear-gradient(322deg, #82afbd, #20395f);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
+
+    /* loading gif css */
+    /* #preloader{
+        background: url(images/spinner-1s-200px(1).gif) no-repeat center center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    } */
 </style>
 <div class="container" style="margin-top: 30px;">
     <div class="card text-center">
@@ -66,6 +75,8 @@ include_once "msg/booking.php";
     </div>
 </div>
 
+<!-- loading gif -->
+<!-- <div id="preloader"></div> -->
 
 <div class="container" style="margin-bottom: 60px;margin-top: 20px;">
     <div class="card">
@@ -139,6 +150,7 @@ include_once "msg/booking.php";
 </div>
 
 <?php include_once "include/footer.php";?>
+<!-- loading -->
 
 <!-- <div class="loadingio-spinner-spinner-prrqg8rgorq"><div class="ldio-ysi86c5lmi">
 <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
