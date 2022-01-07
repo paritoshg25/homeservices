@@ -48,10 +48,6 @@
             font-family: 'Kalam', cursive;
         }
 
-        body {
-            background: linear-gradient(0deg, #306788, #182942);
-        }
-
         a.my-bookings {
             color: white;
             text-decoration: none;

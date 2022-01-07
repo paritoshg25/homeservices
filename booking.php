@@ -39,9 +39,23 @@ include_once "msg/booking.php";
     } */
 </style>
 
+
+<script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+        }
+    };
+</script>
+
+
 <body>
 
-    <div class="loader">
+    <div class="loader" id="loader">
         <img src="images/loading.gif" alt="loading..." />
     </div>
 
@@ -133,7 +147,7 @@ include_once "msg/booking.php";
                     </div>
 
                     <div class="form-group">
-                        <label for="">Time</label>
+                        <label for="">Time (Between 8 a.m. to 8 p.m.)</label>
                         <input class="form-control" type="time" name="time" id="time" min="08:00" max="20:00" required>
                     </div>
 
@@ -163,13 +177,9 @@ include_once "msg/booking.php";
     </div>
 </body>
 <script type="text/javascript">
-    window.addEventListener("load", function() {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
-
-    //     $(window).on("load",function(){
-    //      $(".loader").fadeOut("slow");
+    // window.addEventListener("load", function() {
+    //     const loader = document.querySelector(".loader");
+    //     loader.className += " hidden";
     // });
 </script>
 
