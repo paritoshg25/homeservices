@@ -30,15 +30,20 @@ include_once "msg/booking.php";
     }
 </style>
 
-
-
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
+</script>
 
 
 <body>
 
-    <div class="loader">
-         <div class="ring"></div>
-      </div>
+
+    <div class="loader" id="loader">
+        <img src="images/loading.gif" alt="loading..." />
+    </div>
 
 
     <div class="container" style="margin-top: 30px;">
@@ -152,25 +157,8 @@ include_once "msg/booking.php";
             </div>
         </div>
     </div>
-
-    <script>
-    const loader = document.querySelector(".loader");
-         window.onload = function(){
-           setTimeout(function(){
-             loader.style.opacity = "0";
-             setTimeout(function(){
-               loader.style.display = "none";
-             }, 500);
-           },1500);
-         }
-</script>
 </body>
-<!-- <script type="text/javascript">
-    window.addEventListener("load", function() {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
-</script> -->
+
 
 
 <?php include_once "include/footer.php"; ?>

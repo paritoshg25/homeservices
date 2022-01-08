@@ -24,10 +24,10 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     //     }
     // };
 
-    // window.addEventListener("load", function(){
-    //     const loader = document.querySelector(".loader");
-    //     loader.className += " hidden";
-    // });
+    window.addEventListener("load", function(){
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
 
 
 

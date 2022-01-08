@@ -1,4 +1,4 @@
-/* .loader{
+.loader{
     position:fixed;
     z-index: 1300;
     top: 0;
@@ -16,7 +16,7 @@
 }
 
 .loader.hidden {
-    animation: fadeOut 5s;
+    animation: fadeOut 2s;
     animation-fill-mode: forwards;
 }
 
@@ -25,9 +25,9 @@
         opacity: 0;
         visibility: hidden;
     }
-} */
+}
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,7 +42,6 @@
     justify-content: center;
     background: #fff;
     transition: all 0.5s;
-    /* z-index: 10000; */
   }
   .loader .ring{
     height: 45px;
@@ -68,4 +67,4 @@
     100%{
       transform: rotate(360deg);
     }
-  }
+  } */
