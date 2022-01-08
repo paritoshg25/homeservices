@@ -35,6 +35,24 @@ include_once "msg/booking.php";
         const loader = document.querySelector(".loader");
         loader.className += " hidden";
     });
+
+    // $(function(){
+    
+    // var twoToneButton = document.querySelector('.twoToneButton');
+    
+    // twoToneButton.addEventListener("click", function() {
+    //     twoToneButton.innerHTML = "Booking";
+    //     twoToneButton.classList.add('spinning');
+        
+    //   setTimeout( 
+    //         function  (){  
+    //             twoToneButton.classList.remove('spinning');
+    //             twoToneButton.innerHTML = "Book Hall";
+                
+    //         }, 6000);
+    // }, false);
+    
+// });
 </script>
 
 
@@ -150,7 +168,7 @@ include_once "msg/booking.php";
                         <textarea id="queries" name="queries" class="form-control" maxlength="255" placeholder="What is the Problem..?"></textarea>
                     </div>
 
-                    <button style="margin-top: 30px" class="btn btn-block btn-primary" type="submit" name="book" id="book">Book
+                    <button style="margin-top: 30px" class="btn btn-block btn-primary twoToneButton" type="submit" name="book" id="book">Book
                         Hall</button>
                 </form>
 
