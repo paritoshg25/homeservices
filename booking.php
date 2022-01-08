@@ -40,52 +40,17 @@ include_once "msg/booking.php";
 </style>
 
 
-<script>
-    // document.onreadystatechange = function() {
-    //     if (document.readyState !== "complete") {
-    //         document.querySelector("body").style.visibility = "hidden";
-    //         document.querySelector("#loader").style.visibility = "visible";
-    //     } else {
-    //         document.querySelector("#loader").style.display = "none";
-    //         document.querySelector("body").style.visibility = "visible";
-    //     }
-    // };
-
-    // $(window).on('load', function() {
-    //     setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-    // });
-
-    // function removeLoader() {
-    //     $("#loadingDiv").fadeOut(500, function() {
-    //         // fadeOut complete. Remove the loading div
-    //         $("#loadingDiv").remove(); //makes page more lightweight 
-    //     });
-
-    //     $(window).load(function() {
-    //         $('#loader').hide();
-    //     });
-    // }
-
-    $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
-$(window).on('load', function(){
-  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-});
-function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( "#loadingDiv" ).remove(); //makes page more lightweight 
-  });  
-}
-</script>
 
 
 <body>
-<!-- 
-    <div class="loadingDiv" id="loading">
-        <div class="loader" id="loader">
+
+    <!-- <div class="loader" id="loader">
             <img src="images/loading.gif" alt="loading..." />
-        </div>
     </div> -->
+
+    <div class="loader">
+         <div class="ring"></div>
+      </div>
 
 
     <div class="container" style="margin-top: 30px;">
@@ -204,12 +169,12 @@ function removeLoader(){
         </div>
     </div>
 </body>
-<script type="text/javascript">
-    // window.addEventListener("load", function() {
-    //     const loader = document.querySelector(".loader");
-    //     loader.className += " hidden";
-    // });
-</script>
+<!-- <script type="text/javascript">
+    window.addEventListener("load", function() {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    });
+</script> -->
 
 
 <?php include_once "include/footer.php"; ?>
