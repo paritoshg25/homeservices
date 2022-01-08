@@ -13,6 +13,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 <script>
 
 
+
     // document.onreadystatechange = function() {
     //     if (document.readyState !== "complete") {
     //         document.querySelector("body").style.visibility = "hidden";
@@ -193,7 +194,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         </div>
     </section>
 </div>
-<script src="js/jquery.js"></scrip>
+<script src="js/jquery.js"></script>
 
 <!-- lottie anime -->
 <!-- <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script> -->
