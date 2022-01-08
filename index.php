@@ -11,15 +11,27 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </head>
 
 <script>
-    document.onreadystatechange = function() {
-        if (document.readyState !== "complete") {
-            document.querySelector("body").style.visibility = "hidden";
-            document.querySelector("#loader").style.visibility = "visible";
-        } else {
-            document.querySelector("#loader").style.display = "none";
-            document.querySelector("body").style.visibility = "visible";
-        }
-    };
+    const loader = document.querySelector(".loader");
+    window.onload = function() {
+        setTimeout(function() {
+            loader.style.opacity = "0";
+            setTimeout(function() {
+                loader.style.display = "none";
+            }, 500);
+        }, 1500);
+    }
+
+
+
+    // document.onreadystatechange = function() {
+    //     if (document.readyState !== "complete") {
+    //         document.querySelector("body").style.visibility = "hidden";
+    //         document.querySelector("#loader").style.visibility = "visible";
+    //     } else {
+    //         document.querySelector("#loader").style.display = "none";
+    //         document.querySelector("body").style.visibility = "visible";
+    //     }
+    // };
 
     // window.addEventListener("load", function(){
     //     const loader = document.querySelector(".loader");
@@ -191,11 +203,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         </div>
     </section>
 </div>
-<script src="js/jquery.js"></script>
-
-<!-- lottie anime -->
-<!-- <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script> -->
-
+<script src="js/jquery.js">
 <script>
     $(function() {
         $("#search").click(function() {
