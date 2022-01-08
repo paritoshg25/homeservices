@@ -11,16 +11,6 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </head>
 
 <script>
-    const loader = document.querySelector(".loader");
-    window.onload = function() {
-        setTimeout(function() {
-            loader.style.opacity = "0";
-            setTimeout(function() {
-                loader.style.display = "none";
-            }, 500);
-        }, 1500);
-    }
-
 
 
     // document.onreadystatechange = function() {
@@ -203,7 +193,11 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         </div>
     </section>
 </div>
-<script src="js/jquery.js">
+<script src="js/jquery.js"></scrip>
+
+<!-- lottie anime -->
+<!-- <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script> -->
+
 <script>
     $(function() {
         $("#search").click(function() {
