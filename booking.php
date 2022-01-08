@@ -28,25 +28,13 @@ include_once "msg/booking.php";
         background: linear-gradient(322deg, #82afbd, #20395f);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
-
-    /* loading gif css */
-    /* #preloader{
-        background: url(images/spinner-1s-200px(1).gif) no-repeat center center;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-    } */
 </style>
 
 
 
 
-<body>
 
-    <!-- <div class="loader" id="loader">
-            <img src="images/loading.gif" alt="loading..." />
-    </div> -->
+<body>
 
     <div class="loader">
          <div class="ring"></div>
@@ -157,10 +145,6 @@ include_once "msg/booking.php";
                         <textarea id="queries" name="queries" class="form-control" maxlength="255" placeholder="What is the Problem..?"></textarea>
                     </div>
 
-                    <!-- loading logic -->
-                    <!-- <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> -->
-                    <!-- loading logic -->
-
                     <button style="margin-top: 30px" class="btn btn-block btn-primary" type="submit" name="book" id="book">Book
                         Hall</button>
                 </form>
@@ -168,6 +152,18 @@ include_once "msg/booking.php";
             </div>
         </div>
     </div>
+
+    <script>
+    const loader = document.querySelector(".loader");
+         window.onload = function(){
+           setTimeout(function(){
+             loader.style.opacity = "0";
+             setTimeout(function(){
+               loader.style.display = "none";
+             }, 500);
+           },1500);
+         }
+</script>
 </body>
 <!-- <script type="text/javascript">
     window.addEventListener("load", function() {

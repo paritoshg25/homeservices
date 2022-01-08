@@ -10,29 +10,6 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     <link rel="stylesheet" href="./css/loader.css">
 </head>
 
-<script>
-    document.onreadystatechange = function() {
-        if (document.readyState !== "complete") {
-            document.querySelector("body").style.visibility = "hidden";
-            document.querySelector("#loader").style.visibility = "visible";
-        } else {
-            document.querySelector("#loader").style.display = "none";
-            document.querySelector("body").style.visibility = "visible";
-        }
-    };
-
-    // window.addEventListener("load", function(){
-    //     const loader = document.querySelector(".loader");
-    //     loader.className += " hidden";
-    // });
-
-
-
-    // $(window).on("load", function() {
-    //     $(".loader").fadeOut("slow");
-    // });
-</script>
-
 
 <style>
     body {
@@ -103,14 +80,6 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </style>
 
 
-<!-- <div id="loading-wrapper">
-    <div id="loading-text">LOADING</div>
-    <div id="loading-content"></div>
-</div> -->
-
-<div class="loader" id="loader">
-    <img src="images/loading.gif" alt="loading..." />
-</div>
 
 <div class="main">
 
