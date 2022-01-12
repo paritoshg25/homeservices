@@ -96,6 +96,15 @@
                 <a class="nav-item nav-link" id="about" href="about.php">About</a>
                 <a class="nav-item nav-link" id="contact-us" href="contact-us.php">Contact Us</a>
             </div>
+
+            <!-- <div class="center-nav">
+            <a class="navbar-brand" href="./index.php">
+                    <img src="./animation/Servify 24x7-logo/customer-support2.png" alt="" width="42" height="32" class="d-inline-block align-text-top">
+                    <label for="" class="brand-name">Servify.24x7</label>
+                </a>
+            </div> -->
+
+
             <div class="profile">
                 <?php if (isset($_SESSION['username'])) : ?>
                     <p><a class="my-bookings nav-item" id="my-bookings" href="mybookings.php">My Bookings</a></p>
@@ -123,24 +132,6 @@
 
                     <!-- <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p> -->
                     <p class=""> <a href="./LOGIN/logout-user.php" class="btn btn-danger" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 20px">LOGOUT</a> </p>
-
-
-                    <!--  ------------------------------------------------------------- -->
-
-                    <!-- <button type="button" id= "btndrop" style= "height: 30px; width:40px" onclick="drop">
-                    A
-                    </button> -->
-
-                    <!-- <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onclick="myFunction()">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" id="btndrop" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div> -->
 
 
 
