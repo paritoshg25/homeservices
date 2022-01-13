@@ -12,13 +12,24 @@
 
         html,
         body {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif);
+            /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif); */
+            background: linear-gradient(87deg, #a9968ae0, #5782c1);
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             font-family: 'Poppins', sans-serif;
             margin: 0px;
+        }
+
+        .bg-img {
+            height: 100vh;
+            /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif); */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(3px);
         }
 
         h1 {
@@ -129,15 +140,6 @@
 
 
     <style>
-        .bg-img {
-            height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../animation/background.gif);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: blur(3px);
-        }
 
         .logo {
             display: flex;
