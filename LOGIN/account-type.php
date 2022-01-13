@@ -55,13 +55,10 @@
 
         .account-type {
             display: flex;
-            /* margin: 34px 10px;
-            padding: 20px; */
-            justify-content: space-around;
-        }
-
-        .user {
-            margin-right: 160px;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 300px;
         }
 
         .glow-on-hover {
@@ -140,7 +137,6 @@
 
 
     <style>
-
         .logo {
             display: flex;
             justify-content: center;
@@ -148,7 +144,7 @@
         }
 
         .logo img {
-            width: 64%;
+            width: 20rem;
             border: 2px solid #a0c6ff;
             padding: 15px;
             background: rgb(10 23 22 / 30%);
@@ -166,10 +162,10 @@
         <h1>Choose your Account Type</h1>
         <div class="account-type">
             <div class="user">
-            <a href="login-user.php"><button class="glow-on-hover" type="button"> User</button></a> 
+                <a href="login-user.php"><button class="glow-on-hover" type="button"> User</button></a>
             </div>
             <div class="provider">
-            <a href="login-provider.php"><button class="glow-on-hover" type="button" style="width: 260px;">Service Provider </button></a>
+                <a href="login-provider.php"><button class="glow-on-hover" type="button" style="width: 260px;">Service Provider </button></a>
             </div>
         </div>
     </div>
