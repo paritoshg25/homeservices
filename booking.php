@@ -28,6 +28,29 @@ include_once "msg/booking.php";
         background: linear-gradient(322deg, #82afbd, #20395f);
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
+
+    /* pop up css */
+    .cd-popup {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    }
+
+    .cd-popup.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+
+    .cd-popup-container {
+        transform: translateY(-40px);
+        transition-property: transform;
+        transition-duration: 0.3s;
+    }
+
+    .is-visible .cd-popup-container {
+        transform: translateY(0);
+    }
 </style>
 
 
@@ -231,6 +254,7 @@ include_once "msg/booking.php";
                         Hall</button>
                 </form>
 
+<<<<<<< Updated upstream
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
 
@@ -249,6 +273,19 @@ include_once "msg/booking.php";
                         </div>
                     </div>
                 </div>
+=======
+                <!-- for pop up -->
+                <div class="cd-popup" role="alert">
+                     <div class="cd-popup-container">
+                        <p>Are you sure you want to delete this element?</p>
+                        <ul class="cd-buttons">
+                            <li><a href="#0">Yes</a></li>
+                            <li><a href="#0">No</a></li>
+                        </ul>
+                        <a href="#0" class="cd-popup-close img-replace">Close</a>
+                    </div> <!-- cd-popup-container -->
+                </div> <!-- cd-popup -->
+>>>>>>> Stashed changes
 
             </div>
         </div>
@@ -259,6 +296,7 @@ include_once "msg/booking.php";
     // Get the modal
     var modal = document.getElementById("myModal");
 
+<<<<<<< Updated upstream
     // Get the button that opens the modal
     var btn = document.getElementById("book");
 
@@ -283,4 +321,29 @@ include_once "msg/booking.php";
     }
 </script>
 
+=======
+<script>
+    jQuery(document).ready(function($){
+	//open popup
+	$('#book').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
+	
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+	    }
+    });
+});
+</script>
+>>>>>>> Stashed changes
 <?php include_once "include/footer.php"; ?>
