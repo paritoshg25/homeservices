@@ -178,7 +178,7 @@
                 <a href="login-user.php"><button class="glow-on-hover" type="button"> User</button></a>
             </div>
             <div class="provider">
-                <a href="login-provider.php"><button class="glow-on-hover provider" type="button" style="">Service Provider </button></a>
+                <a href="login-provider.php"><button class="glow-on-hover provider" type="button">Service Provider </button></a>
             </div>
         </div>
     </div>
