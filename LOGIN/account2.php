@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Type</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -56,30 +57,39 @@
         .account-type {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-direction: column;
             height: 300px;
         }
 
         .glow-on-hover {
-            width: 220px;
-            height: 50px;
-            border: none;
-            outline: none;
-            /* color: #fff; */
-            background: rgba(255, 255, 255, 0.8);
+            font-family: 'Montserrat', sans-serif;
+            width: 240px;
+            height: 70px;
             cursor: pointer;
-            position: relative;
-            /* z-index: 0; */
-            border-radius: 30px;
-            text-decoration: none;
             display: inline-block;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             padding: 0px;
             color: rebeccapurple;
+
+            transition: all .5s ease;
+            color: #fff;
+            border: 3px solid white;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1;
+            background-color: transparent;
+            outline: none;
+            border-radius: 4px;
         }
 
-        .glow-on-hover:before {
+        .glow-on-hover:hover {
+            color: #001F3F;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        /* .glow-on-hover:before {
             content: '';
             background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
             position: absolute;
@@ -132,7 +142,7 @@
             100% {
                 background-position: 0 0;
             }
-        }
+        } */
     </style>
 
 
@@ -161,11 +171,14 @@
         </div>
         <!-- <h1>Choose your Account Type</h1> -->
         <div class="account-type">
+            <div class="admin">
+                <a href="login-user.php"><button class="glow-on-hover" type="button"> Admin</button></a>
+            </div>
             <div class="user">
                 <a href="login-user.php"><button class="glow-on-hover" type="button"> User</button></a>
             </div>
             <div class="provider">
-                <a href="login-provider.php"><button class="glow-on-hover" type="button" style="width: 260px;">Service Provider </button></a>
+                <a href="login-provider.php"><button class="glow-on-hover provider" type="button" style="">Service Provider </button></a>
             </div>
         </div>
     </div>

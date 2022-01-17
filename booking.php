@@ -254,7 +254,6 @@ include_once "msg/booking.php";
                         Hall</button>
                 </form>
 
-<<<<<<< Updated upstream
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
 
@@ -272,20 +271,7 @@ include_once "msg/booking.php";
                             <h3>Modal Footer</h3>
                         </div>
                     </div>
-                </div>
-=======
-                <!-- for pop up -->
-                <div class="cd-popup" role="alert">
-                     <div class="cd-popup-container">
-                        <p>Are you sure you want to delete this element?</p>
-                        <ul class="cd-buttons">
-                            <li><a href="#0">Yes</a></li>
-                            <li><a href="#0">No</a></li>
-                        </ul>
-                        <a href="#0" class="cd-popup-close img-replace">Close</a>
-                    </div> <!-- cd-popup-container -->
-                </div> <!-- cd-popup -->
->>>>>>> Stashed changes
+                </div> <!-- Model End -->
 
             </div>
         </div>
@@ -296,7 +282,6 @@ include_once "msg/booking.php";
     // Get the modal
     var modal = document.getElementById("myModal");
 
-<<<<<<< Updated upstream
     // Get the button that opens the modal
     var btn = document.getElementById("book");
 
@@ -320,30 +305,4 @@ include_once "msg/booking.php";
         }
     }
 </script>
-
-=======
-<script>
-    jQuery(document).ready(function($){
-	//open popup
-	$('#book').on('click', function(event){
-		event.preventDefault();
-		$('.cd-popup').addClass('is-visible');
-	});
-	
-	//close popup
-	$('.cd-popup').on('click', function(event){
-		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
-			event.preventDefault();
-			$(this).removeClass('is-visible');
-		}
-	});
-	//close popup when clicking the esc keyboard button
-	$(document).keyup(function(event){
-    	if(event.which=='27'){
-    		$('.cd-popup').removeClass('is-visible');
-	    }
-    });
-});
-</script>
->>>>>>> Stashed changes
 <?php include_once "include/footer.php"; ?>
