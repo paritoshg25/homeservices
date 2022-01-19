@@ -16,16 +16,19 @@
 }
 
 .loader.hidden {
-    animation: fadeOut 2s;
-    animation-fill-mode: forwards;
+    /* animation: fadeOut 2s;
+    animation-fill-mode: forwards; */
+    display: none;
 }
 
-@keyframes fadeOut{
+/* @keyframes fadeOut{
     100% {
         opacity: 0;
         visibility: hidden;
     }
-}
+} */
+
+
 
 /* *{
     margin: 0;
