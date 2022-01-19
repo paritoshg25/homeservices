@@ -7,7 +7,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 ?>
 
 <head>
-    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/loader1.css">
 </head>
 
 <script>
@@ -30,7 +30,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         setTimeout(function() {
             const loader = document.querySelector(".loader");
             loader.className += " hidden";
-        }, 2000)
+        }, 4000)
 
     });
 

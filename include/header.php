@@ -129,12 +129,11 @@
                         </div>
                     </nav>
 
-
                     <!-- <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p> -->
                     <p class=""> <a href="./LOGIN/logout-user.php" class="btn btn-danger" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 20px">LOGOUT</a> </p>
 
-
-
+                    
+                    
                 <?php endif; ?>
             </div>
 
