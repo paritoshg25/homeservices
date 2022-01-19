@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Type</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
@@ -56,82 +57,36 @@
         .account-type {
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-between;
             flex-direction: column;
             height: 300px;
         }
 
         .glow-on-hover {
-            width: 220px;
-            height: 50px;
-            border: none;
-            outline: none;
-            /* color: #fff; */
-            background: rgba(255, 255, 255, 0.8);
+            font-family: 'Montserrat', sans-serif;
+            width: 334px;
+            height: 70px;
             cursor: pointer;
-            position: relative;
-            /* z-index: 0; */
-            border-radius: 30px;
-            text-decoration: none;
             display: inline-block;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             padding: 0px;
             color: rebeccapurple;
+
+            transition: all .5s ease;
+            color: #fff;
+            border: 3px solid white;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 1;
+            background-color: transparent;
+            outline: none;
+            border-radius: 4px;
         }
 
-        .glow-on-hover:before {
-            content: '';
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(5px);
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            animation: glowing 20s linear infinite;
-            opacity: 0;
-            transition: opacity .3s ease-in-out;
-            border-radius: 30px;
-        }
-
-        .glow-on-hover:active {
-            color: #000
-        }
-
-        .glow-on-hover:active:after {
-            background: transparent;
-        }
-
-        .glow-on-hover:hover:before {
-            opacity: 1;
-        }
-
-        .glow-on-hover:after {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #111;
-            left: 0;
-            top: 0;
-            border-radius: 30px;
-        }
-
-        @keyframes glowing {
-            0% {
-                background-position: 0 0;
-            }
-
-            50% {
-                background-position: 400% 0;
-            }
-
-            100% {
-                background-position: 0 0;
-            }
+        .glow-on-hover:hover {
+            color: #001F3F;
+            background-color: #fff;
+            border-radius: 4px;
         }
     </style>
 
@@ -144,7 +99,7 @@
         }
 
         .logo img {
-            width: 20rem;
+            width: 31rem;
             border: 2px solid #a0c6ff;
             padding: 15px;
             background: rgb(10 23 22 / 30%);
@@ -161,11 +116,14 @@
         </div>
         <!-- <h1>Choose your Account Type</h1> -->
         <div class="account-type">
+            <div class="admin">
+                <a href="login-user.php"><button class="glow-on-hover" type="button"> Admin</button></a>
+            </div>
             <div class="user">
                 <a href="login-user.php"><button class="glow-on-hover" type="button"> User</button></a>
             </div>
             <div class="provider">
-                <a href="login-provider.php"><button class="glow-on-hover" type="button" style="width: 260px;">Service Provider </button></a>
+                <a href="login-provider.php"><button class="glow-on-hover provider" type="button">Service Provider </button></a>
             </div>
         </div>
     </div>
