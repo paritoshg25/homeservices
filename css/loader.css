@@ -16,7 +16,7 @@
 }
 
 .hidden {
-    animation: fadeOut .3s;
+    animation: fadeOut .5s;
     animation-fill-mode: forwards;
     /* display: none !important; */
 }
@@ -25,6 +25,7 @@
     100% {
         opacity: 0;
         visibility: hidden;
+        transform: scale(1.5);
     }
 }
 
