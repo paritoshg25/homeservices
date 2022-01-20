@@ -12,21 +12,21 @@
 }
 
 .loader > img {
-    width: 100px;
+    width: 20rem;
 }
 
 .hidden {
-    /* animation: fadeOut 2s;
-    animation-fill-mode: forwards; */
-    display: none !important;
+    animation: fadeOut .3s;
+    animation-fill-mode: forwards;
+    /* display: none !important; */
 }
 
-/* @keyframes fadeOut{
+@keyframes fadeOut{
     100% {
         opacity: 0;
         visibility: hidden;
     }
-} */
+}
 
 
 

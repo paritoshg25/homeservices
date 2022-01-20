@@ -30,7 +30,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         setTimeout(function() {
             const loader = document.querySelector(".loader");
             loader.className += " hidden";
-        }, 4000)
+        }, 3000)
 
     });
 
@@ -116,7 +116,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </div> -->
 
 <div class="loader" id="loader">
-    <img src="images/loading.gif" alt="loading..." />
+    <img src="animation/loading.svg" alt="loading..." />
 </div>
 
 <div class="main">
