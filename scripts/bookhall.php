@@ -37,6 +37,7 @@ if (isset($_POST['book'])) {
         Service Provider Name: $provider_data->name
         Contact No.:  $provider_data->contact
         Appointment Date: $date
+        Appointment time: $time    
 
         PIN for Verification : $code
 
@@ -57,6 +58,7 @@ if (isset($_POST['book'])) {
         Contact No.: $contact
         Address: $adder
         Date: $date
+        Time: $time
         Queries: $queries
         Payment Method: $payment
 

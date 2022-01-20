@@ -48,10 +48,6 @@
             font-family: 'Kalam', cursive;
         }
 
-        body {
-            background: linear-gradient(0deg, #306788, #182942);
-        }
-
         a.my-bookings {
             color: white;
             text-decoration: none;
@@ -100,6 +96,15 @@
                 <a class="nav-item nav-link" id="about" href="about.php">About</a>
                 <a class="nav-item nav-link" id="contact-us" href="contact-us.php">Contact Us</a>
             </div>
+
+            <!-- <div class="center-nav">
+            <a class="navbar-brand" href="./index.php">
+                    <img src="./animation/Servify 24x7-logo/customer-support2.png" alt="" width="42" height="32" class="d-inline-block align-text-top">
+                    <label for="" class="brand-name">Servify.24x7</label>
+                </a>
+            </div> -->
+
+
             <div class="profile">
                 <?php if (isset($_SESSION['username'])) : ?>
                     <p><a class="my-bookings nav-item" id="my-bookings" href="mybookings.php">My Bookings</a></p>
@@ -124,30 +129,11 @@
                         </div>
                     </nav>
 
-
                     <!-- <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p> -->
                     <p class=""> <a href="./LOGIN/logout-user.php" class="btn btn-danger" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 20px">LOGOUT</a> </p>
 
-
-                    <!--  ------------------------------------------------------------- -->
-
-                    <!-- <button type="button" id= "btndrop" style= "height: 30px; width:40px" onclick="drop">
-                    A
-                    </button> -->
-
-                    <!-- <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onclick="myFunction()">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" id="btndrop" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div> -->
-
-
-
+                    
+                    
                 <?php endif; ?>
             </div>
 
@@ -167,7 +153,31 @@
             <a class="nav-item nav-link" id="provider-update-profile" href="provider.php">Update Profile</a>
             <a class="nav-item nav-link" id="provider-manage-booking" href="provider-bookings.php">Manage Booking</a>
             <div class="profile">
-                <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong><?php echo $_SESSION['user']->name; ?></strong></strong></p>
+
+
+                
+
+                <nav class="navbar-expand-sm">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-list-4">
+                            <ul class="navbar-nav">
+                                <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle" onclick="myFunction()" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+                                    </a>
+                                    <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -74px;">
+                                        <a class="dropdown-item" href="#"> <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['user']->name; ?></strong></p></a>
+                                        <a class="dropdown-item" href="#">Edit Profile</a>
+                                        <a class="dropdown-item" href="./LOGIN/logout-user.php">Log Out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                
                 <p class=""> <a href="./LOGIN/logout-provider.php" class="btn btn-danger" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 20px">LOGOUT</a> </p>
             </div>
             <!-- <a class=" btn btn-danger" href="logout.php" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 7px">Log Out</a> -->

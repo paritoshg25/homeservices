@@ -7,26 +7,45 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 ?>
 
 <head>
-    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/loader1.css">
 </head>
+
+<script>
+    // document.onreadystatechange = function() {
+    //     if (document.readyState !== "complete") {
+    //         document.querySelector("body").style.visibility = "hidden";
+    //         document.querySelector("#loader").style.visibility = "visible";
+    //     } else {
+    //         document.querySelector("#loader").style.display = "none";
+    //         document.querySelector("body").style.visibility = "visible";
+    //     }
+    // };
+
+    // window.addEventListener("load", function() {
+    //     const loader = document.querySelector(".loader");
+    //     loader.className += " hidden";
+    // });
+
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        }, 3000)
+
+    });
+
+
+    // $(window).on("load", function() {
+    //     $(".loader").fadeOut("slow");
+    // });
+</script>
+
+
 <style>
     body {
         box-sizing: border-box;
         overflow-x: hidden;
-        /* background: linear-gradient(0deg, #3e4239a6, #1d1717); */
-
-        /* background: linear-gradient(rgba(0, 0, 0, 0.987), rgba(0, 0, 0, 0)), url(./animation/City_Landscape_Background.jpg);
-        background-position: top;
-        background-position-y: bottom;
-        height: 75vh; */
-        /* background-attachment: fixed; */
-    }
-
-    .main {
-        /* background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.8)), url(./animation/tools-bg.jpg);
-        background-position: top;
-        background-position-y: bottom;
-        height: 75vh; */
+        background: linear-gradient(0deg, #306788, #182942);
     }
 
     .main-background {
@@ -96,8 +115,8 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     <div id="loading-content"></div>
 </div> -->
 
-<div class="loader">
-    <img src="images/loading.gif" alt="loading..."/>
+<div class="loader" id="loader">
+    <img src="animation/loading.svg" alt="loading..." />
 </div>
 
 <div class="main">
@@ -180,8 +199,10 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     </section>
 </div>
 <script src="js/jquery.js"></script>
+
 <!-- lottie anime -->
-<script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
+<!-- <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script> -->
+
 <script>
     $(function() {
         $("#search").click(function() {
@@ -222,17 +243,6 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
             }
         });
     });
-</script>
-
-<script type="text/javascript">
-    // window.addEventListener("load", function(){
-    //     const loader = document.querySelector(".loader");
-    //     loader.className += " hidden";
-    // });
-
-    $(window).on("load",function(){
-     $(".loader").fadeOut("slow");
-});
 </script>
 
 <?php include_once "./include/footer.php";

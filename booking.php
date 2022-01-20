@@ -29,19 +29,122 @@ include_once "msg/booking.php";
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
 
-    /* loading gif css */
-    /* #preloader{
-        background: url(images/spinner-1s-200px(1).gif) no-repeat center center;
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        z-index: 100;
-    } */
+    /* pop up css */
+    .cd-popup {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    }
+
+    .cd-popup.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+
+    .cd-popup-container {
+        transform: translateY(-40px);
+        transition-property: transform;
+        transition-duration: 0.3s;
+    }
+
+    .is-visible .cd-popup-container {
+        transform: translateY(0);
+    }
 </style>
+
+
+<style>
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+</style>
+
+
+
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        }, 3000)
+
+    });
+
+</script>
+
 
 <body>
 
-    <div class="loader">
+
+    <div class="loader" id="loader">
         <img src="images/loading.gif" alt="loading..." />
     </div>
 
@@ -133,7 +236,7 @@ include_once "msg/booking.php";
                     </div>
 
                     <div class="form-group">
-                        <label for="">Time</label>
+                        <label for="">Time (Between 8 a.m. to 8 p.m.)</label>
                         <input class="form-control" type="time" name="time" id="time" min="08:00" max="20:00" required>
                     </div>
 
@@ -150,28 +253,48 @@ include_once "msg/booking.php";
                         <textarea id="queries" name="queries" class="form-control" maxlength="255" placeholder="What is the Problem..?"></textarea>
                     </div>
 
-                    <!-- loading logic -->
-                    <!-- <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> -->
-                    <!-- loading logic -->
-
-                    <button style="margin-top: 30px" class="btn btn-block btn-primary" type="submit" name="book" id="book">Book
+                    <button style="margin-top: 30px" class="btn btn-block btn-primary twoToneButton" type="submit" name="book" id="book">Book
                         Hall</button>
                 </form>
+
+                <!-- for pop up -->
+                <div class="cd-popup" role="alert">
+                     <div class="cd-popup-container">
+                        <p>Are you sure you want to delete this element?</p>
+                        <ul class="cd-buttons">
+                            <li><a href="#0">Yes</a></li>
+                            <li><a href="#0">No</a></li>
+                        </ul>
+                        <a href="#0" class="cd-popup-close img-replace">Close</a>
+                    </div> <!-- cd-popup-container -->
+                </div> <!-- cd-popup -->
 
             </div>
         </div>
     </div>
 </body>
-<script type="text/javascript">
-    window.addEventListener("load", function() {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
+
+<script>
+    jQuery(document).ready(function($){
+	//open popup
+	$('#book').on('click', function(event){
+		event.preventDefault();
+		$('.cd-popup').addClass('is-visible');
+	});
+	
+	//close popup
+	$('.cd-popup').on('click', function(event){
+		if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function(event){
+    	if(event.which=='27'){
+    		$('.cd-popup').removeClass('is-visible');
+	    }
     });
-
-    //     $(window).on("load",function(){
-    //      $(".loader").fadeOut("slow");
-    // });
+});
 </script>
-
-
 <?php include_once "include/footer.php"; ?>
