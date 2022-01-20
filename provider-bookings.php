@@ -60,13 +60,19 @@
                     <?= $booking->queries; ?>
                 </td>
                 <td>
-                    <a class="btn btn-danger" style="border-radius: 7px;"
-                        href="deletebooking.php?id=<?= $booking->id; ?>">Remove</a>
+                    <a class="btn btn-danger" style="border-radius: 7px;" onclick="return deleteBooking()" href="deletebooking-provider.php?id=<?= $booking->id; ?>" >Remove</a>
+                    <!-- <a class="btn btn-danger" style="border-radius: 7px;" onclick="deleteBooking()" href="deletebooking-provider.php?id=<?= $booking->id; ?>">Remove</a> -->
                 </td>
             </tr>
             <?php endforeach; ?>
         </table>
     </div>
 </div>
+
+<script>
+    function deleteBooking(){
+        return confirm('Are you sure you want to remove it?');
+    }
+</script>
 
 <?php include_once "include/footer.php";

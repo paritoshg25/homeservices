@@ -272,10 +272,6 @@ include_once "msg/booking.php";
 </body>
 
 <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-<script>
     jQuery(document).ready(function($){
 	//open popup
 	$('#book').on('click', function(event){

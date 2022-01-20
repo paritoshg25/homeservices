@@ -153,7 +153,31 @@
             <a class="nav-item nav-link" id="provider-update-profile" href="provider.php">Update Profile</a>
             <a class="nav-item nav-link" id="provider-manage-booking" href="provider-bookings.php">Manage Booking</a>
             <div class="profile">
-                <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong><?php echo $_SESSION['user']->name; ?></strong></strong></p>
+
+
+                
+
+                <nav class="navbar-expand-sm">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar-list-4">
+                            <ul class="navbar-nav">
+                                <li class="dropdown">
+                                    <a class="nav-link dropdown-toggle" onclick="myFunction()" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+                                    </a>
+                                    <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -74px;">
+                                        <a class="dropdown-item" href="#"> <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['user']->name; ?></strong></p></a>
+                                        <a class="dropdown-item" href="#">Edit Profile</a>
+                                        <a class="dropdown-item" href="./LOGIN/logout-user.php">Log Out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                
                 <p class=""> <a href="./LOGIN/logout-provider.php" class="btn btn-danger" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 20px">LOGOUT</a> </p>
             </div>
             <!-- <a class=" btn btn-danger" href="logout.php" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 7px">Log Out</a> -->
