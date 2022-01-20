@@ -12,13 +12,13 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 
 <script>
 
-    // window.addEventListener("load", function() {
-    //     setTimeout(function() {
-    //         const loader = document.querySelector(".loader");
-    //         loader.className += " hidden";
-    //     }, 3000)
+    window.addEventListener("load", function() {
+        setTimeout(function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        }, 3000)
 
-    // });
+    });
 
 
 
@@ -94,10 +94,10 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 </style>
 
 
-<!-- 
+
 <div class="loader" id="loader">
     <img src="animation/loading2.svg" alt="loading..." />
-</div> -->
+</div>
 
 <div class="main">
 

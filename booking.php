@@ -131,9 +131,9 @@ include_once "msg/booking.php";
 <body>
 
 
-    <div class="loader" id="loader">
+    <!-- <div class="loader" id="loader">
         <img src="images/loading.gif" alt="loading..." />
-    </div>
+    </div> -->
 
 
     <div class="container" style="margin-top: 30px;">
@@ -260,7 +260,8 @@ include_once "msg/booking.php";
         </div>
     </div>
 </body>
-<script type="text/javascript">
+
+<!-- <script type="text/javascript">
     window.addEventListener("load", function() {
         setTimeout(function() {
             const loader = document.querySelector(".loader");
@@ -269,7 +270,7 @@ include_once "msg/booking.php";
 
     });
 
-</script>
+</script> -->
 
 <script>
     jQuery(document).ready(function($){
