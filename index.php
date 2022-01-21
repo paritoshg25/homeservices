@@ -16,7 +16,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         setTimeout(function() {
             const loader = document.querySelector(".loader");
             loader.className += " hidden";
-        }, 3000)
+        }, 300)
 
     });
 
@@ -105,8 +105,9 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     <section class="main-background">
 
         <div class="title">
-            <!-- <h2 class="" style="margin-top: 20px;">Servify 24x7</h2>
-            <label class="" style="font-size: 1.97rem;">Best Services at Your Doorstep</label> -->
+            <h2 class="" style="margin-top: 20px;">Servify 24x7</h2>
+            <label class="" style="font-size: 1.97rem;">Best Services at Your Doorstep</label>
+            <!-- <label class="" style="font-size: 1.6rem;"> <a href="#">Home</a>  >  <a href="#">Page</a> > Page2</label> -->
             <!-- <div class="logo"><img src="animation/logo2.png" alt=""></div> -->
             <!-- <div class="logo"><img src="./animation/Servify 24x7-logo/profile.png" alt=""></div> -->
             <!-- <div class="logo"><img src="./animation/Servify 24x7-logo/logo3.png" alt=""></div> -->
