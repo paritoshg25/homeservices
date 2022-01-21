@@ -16,11 +16,8 @@
 ?>
 <style>
      #admin-manage-provider {
-        opacity: 10;
-        background-color: white;
-        border-bottom: 1px solid while;
-        color: black !important;
-        border-radius: 7px;
+        color: rgb(255, 255, 255);
+        border-bottom: 4px solid #ffffff;
     }
 </style>
 <div class="container" style="margin-top: 30px; margin-bottom: 60px;">

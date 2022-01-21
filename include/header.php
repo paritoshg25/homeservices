@@ -81,12 +81,12 @@
 </head>
 
 <body>
-    <nav class="navbar sticky-top">
+    <nav class="navbar sticky-top" style="padding: 0rem 1rem;">
         <?php if (!isset($_SESSION['user'])) : ?>
             <div class="left-nav">
                 <a class="navbar-brand" href="./index.php">
-                    <img src="./animation/Servify 24x7-logo/customer-support2.png" alt="" width="42" height="32" class="d-inline-block align-text-top">
-                    <label for="" class="brand-name">Servify.24x7</label>
+                    <img src="./animation/Servify 24x7-logo/OIP-removebg-preview.png" alt="" width="42" height="32" class="d-inline-block align-text-top">
+                    <!-- <label for="" class="brand-name">Servify.24x7</label> -->
 
                     <!-- <img src="./animation/Servify 24x7-logo/vector/default-monochrome.svg" alt="" width="42" height="32" class="d-inline-block align-text-top">  -->
                 </a>

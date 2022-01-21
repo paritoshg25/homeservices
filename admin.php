@@ -1,26 +1,25 @@
 <?php
-    include_once "scripts/checklogin.php";
-    include_once "scripts/DB.php";
-    include_once "include/header.php";
+include_once "scripts/checklogin.php";
+include_once "scripts/DB.php";
+include_once "include/header.php";
 
-    if (!check("admin")) {
-        header('Location: logout.php');
-        exit();
-    }
+if (!check("admin")) {
+    header('Location: logout.php');
+    exit();
+}
 
-    $sql = "SELECT b.*, p.name AS provider_name FROM bookings AS b, providers AS p WHERE b.provider_id = p.id ORDER BY b.date DESC";
-    $bookings = DB::query($sql)->fetchAll(PDO::FETCH_OBJ);
+$sql = "SELECT b.*, p.name AS provider_name FROM bookings AS b, providers AS p WHERE b.provider_id = p.id ORDER BY b.date DESC";
+$bookings = DB::query($sql)->fetchAll(PDO::FETCH_OBJ);
 
-    include_once "msg/admin.php";
+include_once "msg/admin.php";
 ?>
 <style>
-     #admin-manage-booking {
-        opacity: 10;
-        background-color: white;
-        color: black !important;
-        border-radius: 7px;
+    #admin-manage-booking {
+        color: rgb(255, 255, 255);
+        border-bottom: 4px solid #ffffff;
     }
-    body{
+
+    body {
         height: 100vh;
     }
 </style>
@@ -38,34 +37,33 @@
                 <th>Provider Name</th>
                 <th>Action</th>
             </tr>
-            <?php foreach ($bookings as $booking): ?>
-            <tr>
-                <td>
-                    <?= $booking->fname; ?> <?= $booking->lname; ?>
-                </td>
-                <td>
-                    <?= $booking->contact; ?>
-                </td>
-                <td>
-                    <?= $booking->adder; ?>
-                </td>
-                <td>
-                    <?= $booking->date; ?>
-                </td>
-                <td>
-                    <?= $booking->payment; ?>
-                </td>
-                <td>
-                    <?= $booking->queries; ?>
-                </td>
-                <td>
-                    <?= $booking->provider_name; ?>
-                </td>
-                <td>
-                    <a class="btn btn-danger"
-                        href="deletebooking.php?id=<?= $booking->id; ?>">Remove</a>
-                </td>
-            </tr>
+            <?php foreach ($bookings as $booking) : ?>
+                <tr>
+                    <td>
+                        <?= $booking->fname; ?> <?= $booking->lname; ?>
+                    </td>
+                    <td>
+                        <?= $booking->contact; ?>
+                    </td>
+                    <td>
+                        <?= $booking->adder; ?>
+                    </td>
+                    <td>
+                        <?= $booking->date; ?>
+                    </td>
+                    <td>
+                        <?= $booking->payment; ?>
+                    </td>
+                    <td>
+                        <?= $booking->queries; ?>
+                    </td>
+                    <td>
+                        <?= $booking->provider_name; ?>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" href="deletebooking.php?id=<?= $booking->id; ?>">Remove</a>
+                    </td>
+                </tr>
             <?php endforeach; ?>
         </table>
     </div>
