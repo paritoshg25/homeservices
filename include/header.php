@@ -119,7 +119,7 @@
                                     <a class="nav-link dropdown-toggle" onclick="myFunction()" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
                                     </a>
-                                    <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -74px;">
+                                    <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -95px;">
                                         <a class="dropdown-item" href="#"> <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p></a>
                                         <a class="dropdown-item" href="#">Edit Profile</a>
                                         <a class="dropdown-item" href="./LOGIN/logout-user.php">Log Out</a>
@@ -130,7 +130,7 @@
                     </nav>
 
                     <!-- <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p> -->
-                    <p class=""> <a href="./LOGIN/logout-user.php" class="btn btn-danger" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 20px">LOGOUT</a> </p>
+                    <!-- <p class=""> <a href="./LOGIN/logout-user.php" class="btn btn-danger" role="button" style="color: white;margin: 5px 6px 6px 4px; border-radius: 20px">LOGOUT</a> </p> -->
 
                     
                     
