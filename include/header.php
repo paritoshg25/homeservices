@@ -121,7 +121,7 @@
                                     </a>
                                     <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -145px;">
                                         <a class="dropdown-item" href="#"> <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p></a>
-                                        <a class="dropdown-item" href="#">Edit Profile</a>
+                                        <a class="dropdown-item" href="./user-editprofile.php">Edit Profile</a>
                                         <a class="dropdown-item" href="./LOGIN/logout-user.php">Log Out</a>
                                     </div>
                                 </li>
