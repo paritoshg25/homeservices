@@ -39,22 +39,22 @@
                         src="images/<?= $provider->photo; ?>"
                         alt="photo">
                 </td>
-                <td><?= $provider->name; ?>
+                <td><?= ucwords($provider->name) ?>
                 </td>
                 <td><?= $provider->contact; ?>
                 </td>
                 <td>
-                    <?= $provider->adder1; ?>,<br>
-                    <?= $provider->adder2 ?>,<br>
-                    <?= $provider->city; ?>
+                    <?= ucwords($provider->adder1) ?>,<br>
+                    <?= ucwords($provider->adder2) ?>,<br>
+                    <?= ucwords($provider->city) ?>
                 </td>
-                <td><?= $provider->profession; ?>
+                <td><?= ucwords($provider->profession) ?>
                 </td>
                 <td>
                     <form action="deletehall.php" method="post">
                         <input type="hidden" name="id"
                             value="<?= $provider->id ;?>">
-                        <button type="submit" name="remove" class="btn btn-danger btn-block">Remove</a>
+                        <button type="submit" name="remove" onclick="return deleteBooking()" class="btn btn-danger btn-block">Remove</a>
                     </form>
                 </td>
             </tr>
@@ -62,6 +62,12 @@
         </table>
     </div>
 </div>
+
+<script>
+    function deleteBooking(){
+        return confirm('Are you sure you want to remove it?');
+    }
+</script>
 
 <?php include_once "include/footer.php";
 

@@ -35,18 +35,19 @@ include_once "msg/admin.php";
                 <th>Payment Method</th>
                 <th>Queries</th>
                 <th>Provider Name</th>
+                <th>Status</th>
                 <th>Action</th>
             </tr>
             <?php foreach ($bookings as $booking) : ?>
                 <tr>
                     <td>
-                        <?= $booking->fname; ?> <?= $booking->lname; ?>
+                        <?= ucfirst($booking->fname) ?> <?= ucfirst($booking->lname) ?>
                     </td>
                     <td>
                         <?= $booking->contact; ?>
                     </td>
                     <td>
-                        <?= $booking->adder; ?>
+                        <?= ucwords($booking->adder) ?>
                     </td>
                     <td>
                         <?= $booking->date; ?>
@@ -61,12 +62,21 @@ include_once "msg/admin.php";
                         <?= $booking->provider_name; ?>
                     </td>
                     <td>
-                        <a class="btn btn-danger" href="deletebooking.php?id=<?= $booking->id; ?>">Remove</a>
+                        <?= $booking->status; ?>
+                    </td>
+                    <td>
+                        <a class="btn btn-danger" onclick="return deleteBooking()" href="deletebooking.php?id=<?= $booking->id; ?>">Remove</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
         </table>
     </div>
 </div>
+
+<script>
+    function deleteBooking(){
+        return confirm('Are you sure you want to remove it?');
+    }
+</script>
 
 <?php include_once "include/footer.php";

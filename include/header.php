@@ -53,7 +53,7 @@
             text-decoration: none;
             margin-right: 29px;
             font-size: 20px;
-            padding: 5px;
+            padding: 10px;
         }
 
         .profile-menu .dropdown-menu {

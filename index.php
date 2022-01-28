@@ -16,7 +16,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         setTimeout(function() {
             const loader = document.querySelector(".loader");
             loader.className += " hidden";
-        }, 3000)
+        }, 300)
 
     });
 
