@@ -119,7 +119,7 @@
                                     <a class="nav-link dropdown-toggle" onclick="myFunction()" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
                                     </a>
-                                    <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -95px;">
+                                    <div class="dropdown-menu" id="btndrop" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -145px;">
                                         <a class="dropdown-item" href="#"> <p class="user-name" style="margin-right: 13px;font-size: 19px;">Welcome&nbsp; <strong> <?php echo $_SESSION['username']; ?></strong></p></a>
                                         <a class="dropdown-item" href="#">Edit Profile</a>
                                         <a class="dropdown-item" href="./LOGIN/logout-user.php">Log Out</a>
