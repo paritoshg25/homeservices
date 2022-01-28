@@ -6,7 +6,7 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod", "Godhra", "
 $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
 ?>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="style3.css">
 
 <style>
     #register-provider {
@@ -22,7 +22,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
         background: none;
     }
     .bg-img {
-        height: 170vh;
+        /* height: 170vh; */
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://businesscentre.yp.ca/documents/20515/38089/Importance+of+Search+for+Home+Services/f0b6e871-7fe7-4b97-8d66-c4f9b9be8ab9?t=1446211421000);
         background-attachment: fixed;
         background-size: cover;
@@ -38,6 +38,7 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     }
 
     .card {
+        margin-bottom: 40px;
         width: 800px;
         background: linear-gradient(0deg, #a9968ae0, #5782c1);
     }
@@ -145,11 +146,15 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
                     </select>
                 </div>
 
-                <button style="margin-top: 30px;" class="btn btn-block btn-primary" type="submit" name="register" id="register">Register</button>
+                <button style="margin-top: 30px;" class="btn btn-block btn-primary" onclick="register()" type="submit" name="register" id="register">Register</button>
             </form>
 
         </div>
     </div>
 </div>
 
-<?php include_once "../include/footer.php";
+<script>
+   setTimeout(register(),3000)
+</script>
+
+

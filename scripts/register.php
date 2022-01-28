@@ -17,6 +17,7 @@ if (isset($_POST['register'])) {
     $city = $input['city'];
     $password = $input['password'];
     $profession = $input['profession'];
+    $rating = 0;
 
     $photo = $_FILES['photo'];
 
@@ -36,9 +37,14 @@ if (isset($_POST['register'])) {
     } else {
 
 
+        // $sql = "INSERT INTO providers values(DEFAULT, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)";
 
-        $isProviderCreated = DB::query("INSERT INTO providers values(DEFAULT, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [
-            $name, $contact, $email, $descr, $adder1, $adder2, $city, $password, $file1, ucfirst($profession)
+        // $isProviderCreated1 = DB::query( $sql, [
+        //     $name, $contact, $email, $descr, $adder1, $adder2, $city, $password, $file1, $profession, $rating
+        // ]);
+
+        $isProviderCreated = DB::query("INSERT INTO providers values(DEFAULT, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [
+            $name, $contact, $email, $descr, $adder1, $adder2, $city, $password, $file1, $profession, $rating
         ]);
 
         if ($isProviderCreated) {
