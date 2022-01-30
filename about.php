@@ -55,7 +55,7 @@
                 </div>
 
                 <div class="card-footer text-center">
-                    Project-Guide: 
+                    Project-Guide: Jinkal Patel 
                 </div>
             </div>
         </div>
