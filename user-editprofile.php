@@ -1,13 +1,18 @@
 <?php
 include_once "scripts/checklogin.php";
 include_once "include/header.php";
+// include_once "scripts/DB.php";
+include_once "scripts/DBUser.php";
 
 // if (!check()) {
 //     header('Location: logout.php');
 //     exit();
 // }
 
-$provider = $_SESSION['user'];
+$user_email = $_SESSION['email'];
+// $user_id=  $_SESSION['username']->id;
+$sql= "SELECT * FROM usertable WHERE email= $user_email" ;
+$user = DBUser::query($sql)->fetchAll(PDO::FETCH_OBJ);
 
 // $cities = ["Ahmednagar", "Akola", "Akot", "Amalner", "Ambejogai", "Amravati", "Anjangaon", "Arvi", "Aurangabad", "Bhiwandi", "Dhule", "Kalyan-Dombivali", "Ichalkaranji", "Kalyan-Dombivali", "Karjat", "Latur", "Loha", "Lonar", "Lonavla", "Mahad", "Malegaon", "Malkapur", "Mangalvedhe", "Mangrulpir", "Manjlegaon", "Manmad", "Manwath", "Mehkar", "Mhaswad", "Mira-Bhayandar", "Morshi", "Mukhed", "Mul", "Greater Mumbai*", "Murtijapur", "Nagpur", "Nanded-Waghala", "Nandgaon", "Nandura", "Nandurbar", "Narkhed", "Nashik", "Navi Mumbai", "Nawapur", "Nilanga", "Osmanabad", "Ozar", "Pachora", "Paithan", "Palghar", "Pandharkaoda", "Pandharpur", "Panvel", "Parbhani", "Parli", "Partur", "Pathardi", "Pathri", "Patur", "Pauni", "Pen", "Phaltan", "Pulgaon", "Pune", "Purna", "Pusad", "Rahuri", "Rajura", "Ramtek", "Ratnagiri", "Raver", "Risod", "Sailu", "Sangamner", "Sangli", "Sangole", "Sasvad", "Satana", "Satara", "Savner", "Sawantwadi", "Shahade", "Shegaon", "Shendurjana", "Shirdi", "Shirpur-Warwade", "Shirur", "Shrigonda", "Shrirampur", "Sillod", "Sinnar", "Solapur", "Soyagaon", "Talegaon Dabhade", "Talode", "Tasgaon", "Thane", "Tirora", "Tuljapur", "Tumsar", "Uchgaon", "Udgir", "Umarga", "Umarkhed", "Umred", "Uran", "Uran Islampur", "Vadgaon Kasba", "Vaijapur", "Vasai-Virar", "Vita", "Wadgaon Road", "Wai", "Wani", "Wardha", "Warora", "Warud", "Washim", "Yavatmal", "Yawal", "Yevla"];
 $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", "Kadi", "Kalol", "Kheda", "Mandvi", "Navsari", "Rajkot", "Vadodara"];
@@ -31,14 +36,14 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
     <div class="card">
         <div class="card-body">
             <div class="card-title">
-                <h3 class="text-center">Update Marriage Hall Information</h3>
+                <h3 class="text-center">Update User Information</h3>
             </div>
             <hr>
 
             <form action="scripts/updatehall.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="">Name</label>
-                    <input value="<?= $provider->name; ?>" id="name" name="name" type="text" class="form-control" placeholder="Name" required>
+                    <label for="">Name <?php echo $user_email ?></label>
+                    <input value="<?= $provider->name;  ?>" id="name" name="name" type="text" class="form-control" placeholder="Name" required>
                 </div>
 
                 <div class="form-group">
