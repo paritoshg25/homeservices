@@ -15,9 +15,7 @@ if (isset($_POST['register'])) {
     $name = $input['name'];
     $contact = $input['contact'];
     $email = $input['email'];
-    $descr = $input['descr'];
     $adder1 = $input['adder1'];
-    $adder2 = $input['adder2'];
     $city = $input['city'];
     $password = $input['password'];
     $profession = $input['profession'];
