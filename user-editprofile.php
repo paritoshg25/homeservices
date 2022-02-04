@@ -49,7 +49,7 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
             </div>
             <hr>
 
-            <form action="scripts/updatehall.php" method="post" enctype="multipart/form-data">
+            <form action="scripts/user-updatehall.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="">Name <?php echo $user->id ?></label>
                     <input value="<?= $user->name;  ?>" id="name" name="name" type="text" class="form-control" placeholder="Name" required>
