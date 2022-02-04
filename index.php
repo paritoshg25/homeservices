@@ -101,8 +101,8 @@ $services = ["Electrician", "Plumber", "Mobile Repairer", "Appliance Repair"];
     <section class="main-background">
 
         <div class="title">
-            <h2 class="" style="margin-top: 20px;">Servi<strong>fy</strong> fy 24x7</h2>
-            <label class="" style="font-size: 1.97rem;"><b>Best Services at Your Doorstep</b></label>
+            <!-- <h2 class="" style="margin-top: 20px;">Servi<strong>fy</strong> fy 24x7</h2> -->
+            <!-- <label class="" style="font-size: 1.97rem;"><b>Best Services at Your Doorstep</b></label> -->
             <!-- <label class="" style="font-size: 1.6rem;"> <a href="#">Home</a>  >  <a href="#">Page</a> > Page2</label> -->
             <!-- <div class="logo"><img src="animation/logo2.png" alt=""></div> -->
             <!-- <div class="logo"><img src="./animation/Servify 24x7-logo/profile.png" alt=""></div> -->

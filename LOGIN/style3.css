@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 html, body{
-    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(../animation/login-background.jpg);  
+    /* background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(../animation/login-background.jpg);   */
+    background:linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(../images/mesh-gradient.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
