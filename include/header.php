@@ -150,7 +150,7 @@
             </div>
 
         <?php else : ?>
-            <a class="nav-item nav-link" id="provider-update-profile" href="provider.php">Update Profile</a>
+            <a class="nav-item nav-link" id="provider-update-profile" href="provider-editprofile.php">Update Profile</a>
             <a class="nav-item nav-link" id="provider-manage-booking" href="provider-bookings.php">Manage Booking</a>
             <div class="profile">
 

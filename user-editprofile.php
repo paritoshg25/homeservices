@@ -51,8 +51,9 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
 
             <form action="scripts/user-updatehall.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="">Name <?php echo $user->id ?></label>
+                    <label for="">Name</label>
                     <input value="<?= $user->name;  ?>" id="name" name="name" type="text" class="form-control" placeholder="Name" required>
+                    <input value="<?= $user->id;  ?>" id="id" name="id" type="hidden" class="form-control" required>
                 </div>
 
                 <div class="form-group">
@@ -99,10 +100,10 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
                     </div>
                 </div>
 
-                <!-- <div class="form-group">
+                <div class="form-group">
                     <label for="">Password</label>
-                    <input value="<?= $user->password; ?>" id="password" name="password" type="password" class="form-control" placeholder="Enter 4 Charectar Password" minlength="4" required>
-                </div> -->
+                    <input value="<?= $_SESSION['password'] ?>" id="password" name="password" type="password" class="form-control" placeholder="Enter 4 Charectar Password" minlength="4" required>
+                </div>
 
                 <button style="margin-top: 20px;" class="btn btn-success btn-block" type="submit" name="register" id="register">Update</button>
             </form>

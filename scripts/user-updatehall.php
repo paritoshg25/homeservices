@@ -1,7 +1,7 @@
 <?php
 include_once "session.php";
 include_once "checklogin.php";
-include_once "DB.php";
+include_once "DBUser.php";
 include_once "helpers.php";
 
 if (!check()) {
@@ -13,12 +13,12 @@ if (isset($_POST['register'])) {
     $input = clean($_POST);
 
     $name = $input['name'];
+    $id = $input['id'];
     $contact = $input['contact'];
     $email = $input['email'];
     $adder1 = $input['adder1'];
     $city = $input['city'];
     $password = $input['password'];
-    $profession = $input['profession'];
 
     $photo = $_FILES['photo'];
 
@@ -29,13 +29,13 @@ if (isset($_POST['register'])) {
         exit();
     }
 
-    $isProviderCreated = DB::query(
-        "UPDATE providers SET name=?, contact=?,email=?, adder1=?, adder2=?, city=?, photo=?, descr=?, password=?, profession=? WHERE id=?",
-        [$name,$contact,$email,$adder1,$adder2,$city,$file1, $descr, $password, $profession,$_SESSION['user']->id]
+    $isProviderCreated = DBUser::query(
+        "UPDATE usertable SET name=?, contact=?,email=?, adder1=?, city=?, photo=?, password=? WHERE id=?",
+        [$name,$contact,$email,$adder1,$city,$file1, $password,$id]
     );
 
     if ($isProviderCreated) {
-        unlink($_SESSION['user']->photo);
+        unlink($_SESSION['username']->photo);
         header('Location: ../logout.php');
         exit();
     } else {
