@@ -41,6 +41,7 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
 </style>
+<?php include_once "msg/update.php"; ?>
 <div class="container" style="margin-top: 30px; margin-bottom: 60px;">
     <div class="card">
         <div class="card-body">

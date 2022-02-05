@@ -38,12 +38,12 @@ if (isset($_POST['register'])) {
 
     if ($isProviderCreated) {
         unlink($_SESSION['user']->photo);
-        header('Location: ../provider-editprofile.php');
+        header('Location: ../logout.php');
         exit();
     } else {
         unlink('../storage/'.$file1);
         echo "";
-        header('Location: ../provider-editprofile.php');
+        header('Location: ../logout.php');
         exit();
     }
 }

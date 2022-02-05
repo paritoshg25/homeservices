@@ -4,10 +4,17 @@ include_once "checklogin.php";
 include_once "DBUser.php";
 include_once "helpers.php";
 
-if (!check()) {
-    header('Location: logout.php');
-    exit();
-}
+// if (!check()) {
+//     header('Location: logout.php');
+//     exit();
+// }
+
+$stmt = DBUser::query(
+    "SELECT * FROM usertable WHERE email=?",
+    [$user_email]
+);
+$user = $stmt->fetch(PDO::FETCH_OBJ);
+
 
 if (isset($_POST['register'])) {
     $input = clean($_POST);
@@ -25,7 +32,7 @@ if (isset($_POST['register'])) {
     $file1 = upload($photo);
 
     if ($file1 === false) {
-        header('Location', '../register.php?msg=file');
+        header('Location', '../user-editprofile.php?msg=file');
         exit();
     }
 
@@ -35,13 +42,15 @@ if (isset($_POST['register'])) {
     );
 
     if ($isProviderCreated) {
-        unlink($_SESSION['username']->photo);
-        header('Location: ../logout.php');
+        unlink($user->photo);
+        // header('Location: ../LOGIN/logout-user.php');
+        header('Location: ../user-editprofile.php?msg=success');
         exit();
     } else {
         unlink('../storage/'.$file1);
         echo "";
-        header('Location: ../logout.php');
+        // header('Location: ../LOGIN/logout-user.php');
+        header('Location: ../user-editprofile.php?msg=failed');
         exit();
     }
 }
