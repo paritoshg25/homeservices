@@ -93,7 +93,7 @@
                 <a class="nav-item nav-link active" id="find-provider" href="index.php">Home</a>
                 <!-- <a class="nav-item nav-link" href="login.php">Login Service Provider</a> -->
                 <!-- <a class="nav-item nav-link" id="register-provider" href="register.php">Register Service Provider</a> -->
-                <a class="nav-item nav-link" id="about" href="about.php">About</a>
+                <a class="nav-item nav-link" id="about" href="about.php">About Us</a>
                 <a class="nav-item nav-link" id="contact-us" href="contact-us.php">Contact Us</a>
             </div>
 
