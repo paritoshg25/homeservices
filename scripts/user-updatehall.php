@@ -8,6 +8,7 @@ include_once "helpers.php";
 //     header('Location: logout.php');
 //     exit();
 // }
+$user_email = $_SESSION['email'];
 
 $stmt = DBUser::query(
     "SELECT * FROM usertable WHERE email=?",

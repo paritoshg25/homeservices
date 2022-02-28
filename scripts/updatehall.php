@@ -4,10 +4,10 @@ include_once "checklogin.php";
 include_once "DB.php";
 include_once "helpers.php";
 
-if (!check()) {
-    header('Location: logout.php');
-    exit();
-}
+// if (!check()) {
+//     header('Location: logout.php');
+//     exit();
+// }
 
 if (isset($_POST['register'])) {
     $input = clean($_POST);
