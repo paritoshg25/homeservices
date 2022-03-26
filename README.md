@@ -33,6 +33,7 @@ real scenario either go over code to remove any security flaws like I stored
 passwords in plain text which is not recommended. Although PDO drivers with
 parameterised query is used there is no guarntee of full hackerproof safety.
 
+![image](https://user-images.githubusercontent.com/69110353/160226759-15f44c1c-c7fb-497b-bbae-469338bfe1a8.png)
 
 ## Want production ready version?
 Currently I would not suggest you to use this for anything rather than study or
