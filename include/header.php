@@ -141,6 +141,7 @@
             <div class="admin-nav">
                 <li><a class="nav-item nav-link " id="admin-manage-provider" href="managehall.php">Manage Providers</a></li>
                 <li><a class="nav-item nav-link" id="admin-manage-booking" href="admin.php">Manage Booking</a></li>
+                <li><a class="nav-item nav-link" id="admin-manage-user" href="manageUsers.php">Manage Users</a></li>
                 <!-- <li><a class="nav-item nav-link" href="logout.php">Log Out</a></li> -->
             </div>
 
