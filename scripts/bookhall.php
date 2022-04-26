@@ -43,7 +43,7 @@ if (isset($_POST['book'])) {
 
         Our Service Provider will be reach out to you very soon! Thank You. Have a nice Day.
         
-        Team Home Service"; 
+        Team Servify.24x7"; 
         $sender = "From:  servify.24x7@gmail.com";
         mail($email, $subject1, $message1, $sender);
         
@@ -67,7 +67,7 @@ if (isset($_POST['book'])) {
 
         Contact Us/Customer for any Query.
         Thanks,
-        Team Home Service"; 
+        Team Servify.24x7"; 
         $sender = "From: servify.24x7@gmail.com";
         mail($provider_data->email, $subject2, $message2, $sender);
 
