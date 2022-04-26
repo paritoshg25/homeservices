@@ -88,7 +88,7 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
                     </select>
                 </div>
 
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <div class="row">
                         <div class="col-2 text-center">
                             <img style=" height: 100px;" src="images/<?= $user->photo; ?>">
@@ -99,7 +99,7 @@ $cities = ["Ahmedabad", "Amreli", "Anand", "Bhuj", "Bopal", "Dahod" , "Godhra", 
                             <input id="photo" name="photo" type="file" class="form-control-file" placeholder="Select Photo 1" required>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="form-group">
                     <label for="">Password</label>

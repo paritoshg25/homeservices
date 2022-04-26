@@ -27,23 +27,16 @@ if (isset($_POST['register'])) {
     $adder1 = $input['adder1'];
     $city = $input['city'];
     $password = $input['password'];
+    $encppass = password_hash($password, PASSWORD_BCRYPT);
 
-    $photo = $_FILES['photo'];
-
-    $file1 = upload($photo);
-
-    if ($file1 === false) {
-        header('Location', '../user-editprofile.php?msg=file');
-        exit();
-    }
 
     $isProviderCreated = DBUser::query(
-        "UPDATE usertable SET name=?, contact=?,email=?, adder1=?, city=?, photo=?, password=? WHERE id=?",
-        [$name,$contact,$email,$adder1,$city,$file1, $password,$id]
+        "UPDATE usertable SET name=?, contact=?,email=?, address=?, city=?, password=? WHERE id=?",
+        [$name,$contact,$email,$adder1,$city, $encppass,$id]
     );
 
     if ($isProviderCreated) {
-        unlink($user->photo);
+        // unlink($user->photo);
         // header('Location: ../LOGIN/logout-user.php');
         header('Location: ../user-editprofile.php?msg=success');
         exit();
