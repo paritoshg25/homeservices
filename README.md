@@ -9,8 +9,7 @@ login.
 
 ## License & Copyrights
 You can fully copy or redistribute any part including assets, no License or
-credit required. (Optional if you end up using it can provide link to my
-webiste as it would help me to gain more traffic. It's totally optional).
+credit required.
 This Project uses MIT license.
 
 ## Information
@@ -21,26 +20,14 @@ This Project uses MIT license.
 
 #### Login Info
 - Admin:
-  - Mobile No.: 7070808080
+  - Email: admin@servify.24x7.com
   - Password  : admin123
 - Providers:
     - No Providers are registered by default use register screen to create
       some.
+- Users:
+    - All the users need to register first to access the website.
 
-#### NOTE
-This project is not meant to be used in production. If you want to use it in
-real scenario either go over code to remove any security flaws like I stored
-passwords in plain text which is not recommended. Although PDO drivers with
-parameterised query is used there is no guarntee of full hackerproof safety.
-
-![image](https://user-images.githubusercontent.com/69110353/160226789-9e554853-b045-4931-8a16-be61ed389635.png)
-
-
-## Want production ready version?
-Currently I would not suggest you to use this for anything rather than study or
-for really small scale business. But if you want full featured Application you
-can hire me thorugh my email(v at kubre dot in) or
-[website](https://kubre.in).
 
 ## Features
 - Search for professionals for plumbing, mobile repaires, etc. in your city.
@@ -49,6 +36,7 @@ can hire me thorugh my email(v at kubre dot in) or
   Providers Login.
 - Admin can see and manage bookings.
 - Admin can see and manage providers.
+- Admin can see and manage users.
 
 
 
